@@ -10,6 +10,17 @@
 
 /* Original Bootstrap class overwritten */
 
+@font-face {
+ font-family: "Tabular";
+ src: url(Tabular-medium.woff);
+}
+
+@font-face {
+ font-family: "Switzer";
+ src: url(Switzer-Bold.woff);
+ font-weight: bold;
+}
+
 .container{
 	/* height: 500vh; */
 }
