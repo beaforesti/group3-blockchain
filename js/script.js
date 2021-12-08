@@ -13,7 +13,3 @@ function discoverMore(x) {
   x.style.height = "120px";
   x.style.width = "120px";
 }
-
-$(document).ready(function(){
-  $('[data-toggle="popover"]').popover();
-});
