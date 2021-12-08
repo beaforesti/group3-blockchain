@@ -1,5 +1,5 @@
 /* Our CSS style */
-.navbar {
+/* .navbar {
 	font-family: 'VT323', monospace;
   font-size: 2rem;
 }
@@ -11,28 +11,142 @@
 /* Original Bootstrap class overwritten */
 
 .container{
-	margin-top:100px;
-	height: 200vh;
+	/* height: 500vh; */
 }
 
+.center{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.center-top{
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+#videoTitle{
+	width:30%;
+}
+
+#One{
+	height: 100vh;
+	background-color: #000000;
+
+}
+
+#Two{
+	height: 100vh;
+}
+
+#Three{
+	height: 30vh;
+	background-color: #000000;
+}
+
+#Four{
+	height: 70vh;
+	background-color: #ffffff;
+}
+
+
 body {
-	color: #CCFBB9;
-	text-align: left;
-	background-color: #151116;
+	background-color: #ffffff;
 }
 
 h1, .h1 {
-	font-family: 'VT323', monospace;
-  font-size: 5rem;
+	font-family: "Tabular";
+	font-weight: "Medium";
+	text-align: center;
+  font-size: 3.5rem;
+	color: #ffffff;
 }
+
+mark, .mark {
+    padding: 0.2em;
+    background-color: #000000;
+		color: #ffffff;
+		border: 3px solid white;
+		line-height: 6.5rem;
+}
+
 
 h2, .h2 {
-	font-family: 'VT323', monospace;
+	font-family: "Tabular";
+	font-weight: "Medium";
+	text-align: center;
   font-size: 2.5rem;
+	color: #000000;
+}
+
+h3, .h3 {
+	font-family: "Switzer";
+	font-weight: bold;
+	text-align: center;
+  font-size: 1.5rem;
+	padding:20px 0;
+	color: #000000;
+}
+
+h4, .h4 {
+	font-family: "Switzer";
+	text-align: center;
+  font-size: 1rem;
+	padding:20px 0;
+	color: #000000;
+}
+
+p, .p {
+	font-family: "Switzer";
+	text-align: left;
+  font-size: 0.8rem;
+	color: #000000;
+}
+
+.white{
+	color: #ffffff;
+}
+
+#myButton{
+	background-color: #ffffff;
+	border: 1px solid black;
+	color: black;
+	font-family: "Switzer";
+	font-size: 1.5rem;
+	padding: 10px 100px;
+	border-radius: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/assets/bg-two.png");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+	background-color: #000000;
+}
+
+.margin-top{
+	margin-top: 80px;
+}
+
+#myGif1{
+	margin-top: 80px;
 }
 
 
-a {
+
+/* a {
   color: #CCFBB9;
   text-decoration: none;
   background-color: transparent;
@@ -40,4 +154,4 @@ a {
 
 a:hover {
   color: #7FFE4C;
-}
+} */
