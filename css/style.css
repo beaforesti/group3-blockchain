@@ -1,18 +1,8 @@
 /* Our CSS style */
-/* .navbar {
-	font-family: 'VT323', monospace;
-  font-size: 2rem;
-}
 
-.navbar-brand {
-	font-size: 3rem;
-}
-
-/* Original Bootstrap class overwritten */
-
-@font-face {
+/*@font-face {
  font-family: "Tabular";
- src: url(Tabular-medium.woff);
+ src: url(Tabular-Medium.ttf);
 }
 
 @font-face {
@@ -20,10 +10,7 @@
  src: url(Switzer-Bold.woff);
  font-weight: bold;
 }
-
-.container{
-	/* height: 500vh; */
-}
+*/
 
 .center{
 	position: relative;
@@ -39,27 +26,71 @@
 }
 
 #videoTitle{
-	width:30%;
+	width:90vw;
+	max-width: 1000px;
+	max-height: inherit;
 }
 
 #One{
 	height: 100vh;
-	background-color: #000000;
+	background-image: url("../assets/bg-one.png");
+	position: relative;
+	text-align: center;
+}
 
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.overlay {
+  transition: .2s ease;
+  opacity:0.8;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+#videoTitle:hover .overlay {
+  opacity: 0.2;
 }
 
 #Two{
-	height: 100vh;
+	height: inherit;
+	background-color: #FFFFFF;
 }
 
 #Three{
-	height: 30vh;
-	background-color: #000000;
+	height: inherit;
+	background-color: #01F293;
+	padding-bottom: 100px;
 }
 
 #Four{
-	height: 70vh;
+	height: inherit;
+	background-color: #0D0D0D;
+	padding-top: 100px;
+	
+}
+
+#Five{
+	height: inherit;
 	background-color: #ffffff;
+}
+
+
+#Six{
+	height: 300vh;
+	background-color: #ffffff;
+}
+
+
+.intro {
+	height: 400px;
+	background-color: #0D0D0D;
+	
 }
 
 
@@ -68,95 +99,270 @@ body {
 }
 
 h1, .h1 {
-	font-family: "Tabular";
-	font-weight: "Medium";
+	font-family: 'Noto Sans Mono', monospace;
 	text-align: center;
-  font-size: 3.5rem;
-	color: #ffffff;
+	font-size: 2.5rem;
+	line-height: 66px;
+	color: #0D0D0D;
+	background-color: #ffffff;
+	border-style: solid;
+	border-bottom: 10px solid #0D0D0D;
+	border-right: 10px solid #0D0D0D;
+	border-color: #0D0D0D;
+	
+	
 }
 
 mark, .mark {
-    padding: 0.2em;
-    background-color: #000000;
-		color: #ffffff;
-		border: 3px solid white;
-		line-height: 6.5rem;
+    padding: inherit;
+    background-color: #0D0D0D;
+	color: #ffffff;	
+	border-bottom: 5px solid #aaaaaa;
+	border-right: 5px solid #aaaaaa;
+}
+
+mark:hover{
+	background-color: #ffffff;
+	color: #0D0D0D;
 }
 
 
 h2, .h2 {
-	font-family: "Tabular";
-	font-weight: "Medium";
+	font-family: 'Noto Sans Mono', monospace;
 	text-align: center;
-  font-size: 2.5rem;
-	color: #000000;
+  font-size: 2rem;
+	color: #0D0D0D;
 }
 
 h3, .h3 {
-	font-family: "Switzer";
-	font-weight: bold;
-	text-align: center;
-  font-size: 1.5rem;
-	padding:20px 0;
-	color: #000000;
-}
-
-h4, .h4 {
-	font-family: "Switzer";
+	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
   font-size: 1rem;
 	padding:20px 0;
-	color: #000000;
+	color: #0D0D0D;
+}
+
+h4, .h4 {
+	font-family: 'Noto Sans', sans-serif;
+	text-align: center;
+  font-size: 0.8rem;
+	padding:20px 0;
+	color: #0D0D0D;
 }
 
 p, .p {
-	font-family: "Switzer";
+	font-family: 'Noto Sans', sans-serif;
 	text-align: left;
   font-size: 0.8rem;
-	color: #000000;
+	color: #0D0D0D;
 }
 
 .white{
 	color: #ffffff;
 }
 
-#myButton{
-	background-color: #ffffff;
-	border: 1px solid black;
-	color: black;
-	font-family: "Switzer";
+#myBtn{
+	background-color: #0D0D0D;
+	color: #ffffff;
+	font-family: 'Noto Sans Mono', monospace;
 	font-size: 1.5rem;
-	padding: 10px 100px;
 	border-radius: 0;
+	border-color: #aaaaaa;
+	border-width: 0px 5px 5px 0px;
+	position: fixed;
+	z-index: 2;
+	right: 10px;
+	bottom: 10px;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("/assets/bg-two.png");
-
-  /* Full height */
-  height: 100vh;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#myBtn:hover {
+  background-color: #ffffff; 
+	color: #0D0D0D;
 }
 
-.card{
-	background-color: #000000;
+#myBtn:active {
+border: none;
+  box-shadow: 0 5px #0D0D0D;
+  transform: translateY(4px);
 }
+
+#homeBtn{
+	background-color: #ffffff;
+	color: #0D0D0D;
+	font-family: 'Noto Sans Mono', monospace;
+	font-size: 1.5rem;
+	border-radius: 0;
+	border-color: #aaaaaa;
+	border-width: 0px 5px 5px 0px;
+	position: fixed;
+	z-index: 2;
+	left: 10px;
+	top: 10px;
+}
+
+#homeBtn:hover {
+  background-color: #0D0D0D; 
+	color: #ffffff;
+}
+
+
 
 .margin-top{
+	margin-top: 120px;
+}
+
+.myGif1{
 	margin-top: 80px;
 }
 
-#myGif1{
-	margin-top: 80px;
+
+.popup1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup1 .popuptext1 {
+  visibility: hidden;
+  width: 600px;
+	height: 200px;
+  background-color: #ffffff;
+  color: #0D0D0D;
+  text-align: left;
+  border-style: solid;
+	border-color: #0D0D0D;
+	border-bottom: 10px solid #0D0D0D;
+	border-right: 10px solid #0D0D0D;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 10%;
+  margin-left: -200px;
+}
+
+.popup2 .popuptext2 {
+ visibility: hidden;
+  width: 600px;
+	height: 200px;
+  background-color: #ffffff;
+  color: #0D0D0D;
+  text-align: left;
+  border-style: solid;
+	border-color: #0D0D0D;
+	border-bottom: 10px solid #0D0D0D;
+	border-right: 10px solid #0D0D0D;
+  padding: 10px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 20%;
+  margin-left: -100px;
 }
 
 
 
+/* Toggle this class - hide and show the popup */
+.popup1 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.2s;
+  animation: fadeIn 0.2s;
+}
+
+
+
+.popup2 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.2s;
+  animation: fadeIn 0.2s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.clearfix {
+  overflow:inherit;
+}
+
+
+/* The Modal (background) 
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 150px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%; 
+  overflow: auto; 
+} 
+
+ Modal Content 
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding:10px;
+	border-style: solid;
+	border-bottom: 10px solid #0D0D0D;
+	border-right: 10px solid #0D0D0D;
+	border-color: #0D0D0D;
+	
+  width: 50%;
+} */
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bottomright {
+  position: relative;
+  bottom: 2px;
+  right: 16px;
+}
+
+.imgApp{
+	opacity: 0.5;
+}
+
+.imgApp:hover {
+	opacity: 1;
+	transform: 1.5;
+}
 /* a {
   color: #CCFBB9;
   text-decoration: none;

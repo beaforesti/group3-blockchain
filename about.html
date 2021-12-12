@@ -9,12 +9,16 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-about.css">
 
   <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Mono:wght@700&display=swap" rel="stylesheet">
+
+	
+<link rel="preload" as="image" href="assets/bg-one.png">
 
   <title> About </title>
 </head>
@@ -22,42 +26,41 @@
 
 <body>
 
-  <!--Nav Bar-->
-    <nav class="navbar navbar-expand-sm bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Blockchain
-          <!-- <img src="assets/logo.png" alt="Logo" style="width:40px;" class="rounded-pill">  -->
-        </a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">What</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">How</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Us</a>
-            </li>
-          </ul>
+<!--Home button -->
+<a href="index.html"><button id="homeBtn">Demystifying Blockchain</button></a>
+
+<!--Section About One: Introduction-->
+    <div class="container-fluid" id="aOne">	
+		<div class="row">
+        <div class="col-12">
+        </div>
+		</div>
+         <div class="row margin-top">
+        <div class="col-3">
+        </div>
+        <div class="col 6">
+		  <h1>About</h1>
+            <h2 class="white text-left">This is an introduction of the about page with some text.</h2>
+        </div>
+        <div class="col-3">
         </div>
       </div>
-    </nav>
-    <br>
-
-  <!--Content of the page-->
-  <div class="container">
-      <div class="row">
-  		   <div class="col-12">
-           <h2> Us </h2>
-  		   </div>
-  		 </div>
-       <div class="row col-12">
-       </div>
     </div>
+
+<!--Section About Two: Explanation-->
+	<div class="container-fluid" id="aTwo" >
+	<div class="container">
+        <div class="row margin-top">
+			<div class="col-2">
+			</div>
+			<div class="col 8">
+				<h2>Explanation of something</h2>
+			</div>
+			<div class="col-2">
+			</div>
+		</div>
+    </div>
+	</div>
 
 
   <!-- d3.js library -->

@@ -1,15 +1,41 @@
 // JS file //
-function bigImg(x) {
-  x.style.height = "120px";
-  x.style.width = "120px";
+
+// When the user clicks on div, open the popup
+
+
+function myFunction() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
 }
 
-function normalImg(x) {
-  x.style.height = "98px";
-  x.style.width = "98px";
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
 }
 
-function discoverMore(x) {
-  x.style.height = "120px";
-  x.style.width = "120px";
+/*
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
 }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} */
