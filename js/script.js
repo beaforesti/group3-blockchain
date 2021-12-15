@@ -1,41 +1,42 @@
 // JS file //
 
 // When the user clicks on div, open the popup
-
-
-function myFunction() {
-  var popup = document.getElementById("myPopup1");
+function popupFunction1() {
+  var popup = document.getElementById("popupTextCrypto");
   popup.classList.toggle("show");
 }
 
-function myFunction2() {
-  var popup = document.getElementById("myPopup2");
+function popupFunction2() {
+  var popup = document.getElementById("popupTextNft");
   popup.classList.toggle("show");
 }
 
-/*
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+function popupFunction3() {
+  var popup = document.getElementById("popupTextTimeSt");
+  popup.classList.toggle("show");
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+function popupFunction4() {
+  var popup = document.getElementById("popupTextInfo");
+  popup.classList.toggle("show");
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} */
+function popupFunction5() {
+  var popup = document.getElementById("popupTextHacker");
+  popup.classList.toggle("show");
+}
+
+function popupFunction6() {
+  var popup = document.getElementById("popupTextHash");
+  popup.classList.toggle("show");
+}
+
+function popupFunction7() {
+  var popup = document.getElementById("popupTextPow");
+  popup.classList.toggle("show");
+}
+
+function popupFunction8() {
+  var popup = document.getElementById("popupTextReward");
+  popup.classList.toggle("show");
+}
