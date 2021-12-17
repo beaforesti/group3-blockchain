@@ -12,18 +12,19 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Mono:wght@700&family=Readex+Pro&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Mono:wght@700&family=Readex+Pro&display=swap" rel="stylesheet">
 
- <!-- <link rel="preload" as="font" href="/font/Tabular-Medium.woff" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/font/Switzer-Bold.woff" type="font/woff" crossorigin="anonymous">
-	
-  <link rel="preload" as="image" href="assets/bg-two.png">
-  <link rel="preload" as="image" href="assets/click-symbol.png"> -->
-<link rel="preload" as="image" href="assets/bg-one.png">
+  <link rel="preload" as="image" href="assets/bg-one.png">
 
-  <title> Blockchain </title>
+<!--
+<script src="js/p5.min.js"></script>
+<script src="js/p5.sound.min.js"></script>
+<script src="js/sketch.js"></script>-->
+
+  <title>Demistifying Blockchain</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
 </head>
 
 
@@ -32,21 +33,22 @@
 
 
 <!--Home button -->
-<a href="index.html"><button id="homeBtn">Demystifying Blockchain</button></a>
-	
-<!--Abuot button -->
-<a href="about.html"><button id="myBtn">About</button></a>
-	
-<!--Content of the page-->
+<!--<a href="index.html"><button id="homeBtn">Demystifying Blockchain</button></a>-->
+<a href="index.html"><button id="homeBtn"></button></a>
 
+
+<!--Abuot button -->
+<a href="about.html"><div id="aboutBtn">About</div></a>
+
+
+<!--Content of the page-->
 
 <!--Home page: the Video-->
   <div class="container-fluid" id="One">
 	  <div class="center" id="videoTitle">
 		  <img src="assets/buzz.gif" alt="Blockchain Supercut Video" width="100%" class="img-fluid">
-		  <div class="centered overlay">
-			 <!-- <h2 class="text-center white text-uppercase">Demystifying blockchain</h2> -->
-		  </div>
+		  <!--<div class="center overlay">-->
+			 <!-- <h2 class="text-center white text-uppercase">Demystifying blockchain</h2></div> -->
 	  </div>
 
       <!-- Video-->
@@ -56,46 +58,46 @@
 
   </div>
 
-   <!-- Sections-->
-<div class="container-fluid" id="Two">
-  <div class="container center-top">
+<!-- Sections-->
+<!-- Section 2: The title-->
+  <div class="container-fluid" id="Two">
+    <div class="container center-top">
+        <div class="row">
+           <div class="col-sm-2">
+           </div>
+           <div class="col-sm-8">
+             <h1 class="text-center text-uppercase">Demystifying blockchain</h1>
+           </div>
+           <div class="col-sm-2">
+           </div>
+         </div>
          <div class="row">
-         <div class="col-sm-2">
+           <div class="col-2">
+           </div>
+           <div class="col-8">
+             <h4 class="text-center white"> What is a blockchain? How can it be used? <br>
+               And why do people talk about it? <br> - <br> A step by step guide </h4>
+           </div>
+           <div class="col-2">
+           </div>
          </div>
-         <div class="col-sm-8">
-           <h1 class="text-center text-uppercase">Demystifying blockchain</h1>
-         </div>
-         <div class="col-sm-2">
-         </div>
-       </div>
-       <div class="row">
-         <div class="col-2">
-         </div>
-         <div class="col-8">
-           <h4 class="text-center white"> What is a blockchain? How can it be used? <br>
-             And why do people talk about it? <br> - <br> A step by step guide </h4>
-         </div>
-         <div class="col-2">
-         </div>
-       </div>
+    </div>
   </div>
-</div>
-	
+
 <!--Section Three: Introduction-->
-    <div class="container-fluid" id="Three">
-		<div class="row">
-			<div class="col-12">
-			</div>
-		</div>
-		
-         <div class="row margin-top">
-        <div class="col-3">
-        </div>
-        <div class="col-sm-6">
-		  <h2 class="white text-center">Hi :)</h2>
-            <h3 class="white text-center">Blockchains and nfts are not just buzz, it's already here and in action if you spent any time on the internet 
+  <div class="container-fluid" id="Three">
+  	<div class="row">
+  		<div class="col-12">
+  		</div>
+  	</div>
+    <div class="row margin-top">
+      <div class="col-2">
+      </div>
+      <div class="col-sm-6">
+          <h2 class="white">Hi :)</h2>
+          <h3 class="white">Blockchains and nfts are not just buzz, it's already here and in action if you spent any time on the internet
               you probably have heard of
-				<mark class="popup" id="popupCrypto" onclick="popupFunction1()"> crypto 
+				<mark class="popup" id="popupCrypto" onclick="popupFunction1()"> crypto
 					<span class="popuptext" id="popupTextCrypto">
 					<div class="row">
 						<div class="col-sm-11"><h3>CRYPTO</h3><p>A digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority. <br> <br>-Oxford Languages</p>
@@ -103,8 +105,8 @@
 						<div class="col-sm-1"><span class="close">&times;</span>
 						</div>
 					</div>
-					</span>					
-				</mark> 
+					</span>
+				</mark>
 				<br>
 				and
 				<mark class="popup" id="popupNft" onclick="popupFunction2()"> NFTs
@@ -117,14 +119,14 @@
 						</div>
 					</span>
 				</mark> but we’re here to broaden your horizons.</h3>
-        </div>
-        <div class="col-3">
-        </div>
+      </div>
+      <div class="col-4">
       </div>
     </div>
+  </div>
 
 <!--Section Four: Blockchains can be found everywhere-->
-	<div class="container-fluid" id="Four" >
+<!--	<div class="container-fluid" id="Four" >
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -143,7 +145,7 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>FINANCIAL SERVICES AND BANKING</strong></h4>
                 </div>
-			</div>		
+			</div>
 		</div>
 		<div class="col-sm-3 col-sm-5">
 			<div class="imgApp center-top">
@@ -151,7 +153,7 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>HEALTH CARE</strong></h4>
                 </div>
-			</div>			
+			</div>
 		</div>
 		<div class="col-sm-3 col-xl-4">
 			<div class="imgApp center-top">
@@ -159,7 +161,7 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>GOVERNMENT</strong></h4>
                 </div>
-			</div>			
+			</div>
 		</div>
 		</div>
 		<div class="row">
@@ -169,7 +171,7 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>INFRASTRUCTURE</strong></h4>
                 </div>
-			</div>			
+			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="imgApp center-top">
@@ -177,7 +179,7 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>MANUFACTURING</strong></h4>
                 </div>
-			</div>			
+			</div>
 		</div>
 		<div class="col-sm-3 col-xl-4">
 			<div class="imgApp center-top">
@@ -185,7 +187,7 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>MEDIA AND ENTERTAINMENT</strong></h4>
                 </div>
-			</div>			
+			</div>
 		</div>
 		</div>
 		<div class="row">
@@ -195,7 +197,7 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>SUPPLY CHAIN MANAGEMENT</strong></h4>
                 </div>
-			</div>			
+			</div>
 		</div>
 		<div class="col-sm-3 col-xl-5">
 			<div class="imgApp center-top">
@@ -203,27 +205,29 @@
 				<div class="bottomleft">
 				  <h4 class="white text-left"><strong>PUBLIC SECTOR</strong></h4>
                 </div>
-			</div>			
+			</div>
 		</div>
 		</div>
     </div>
-	</div>
+	</div>-->
 
-<!--Black section fro introduction-->
+
+<!--Black section for introduction-->
 	<div class="container-fluid intro">
 		<div class="container">
 		<div class="row">
 			<div class="col-10"><h2 class="white text-left margin-top">What makes blockchain special?
 			</h2>
 			</div>
-			
+
 			<div class="col-2"></div>
 		</div>
 		</div>
 	</div>
-	
+
+<!--Section Five: The Trilemma-->
 	<div class="container-fluid" id="Five" >
-	<div class="container">
+	   <div class="container">
          <div class="row margin-top">
         <div class="col-12">
             <h2 class="text-uppercase">Blockchains are beneficial because they are:</h2>
@@ -231,82 +235,69 @@
       </div>
 		 <div class="row margin-top">
         <div class="col-sm-4">
-            <h3 class="text-uppercase text-center">Decentralized</h3>
+			<div><h3 class="text-uppercase text-center">Secure</h3></div>
+			<img src="assets/secure.png" alt="Secure" class="img-fluid">
         </div>
 		<div class="col-sm-4">
-            <h3 class="text-uppercase text-center">Secure</h3>
+            <div><h3 class="text-uppercase text-center">Decentralized</h3></div>
+			<img src="assets/decentralized.png" alt="Decentralized" class="img-fluid">
         </div>
 		<div class="col-sm-4">
-            <h3 class="text-uppercase text-center">Scalable</h3>
+            <div><h3 class="text-uppercase text-center">Scalable</h3></div>
+			<img src="assets/scalable.png" alt="Scalable" class="img-fluid">
         </div>
       </div>
-	<div class="row margin-top" id="trilemma">
-	<div class="col-md-4 col-sm-12">
-				<div class="col-12">
-					<h3 class="text-uppercase text-center "><strong>Decentralized</strong></h3>
+
+		<div class="row margin-top trilemma" id="trilemma1">
+			<div class="col-sm-12">
+				<div class="row">
+				<div class="col-1">
+					<img src="assets/secure2.png" alt="Secure logo" class="trilemmaLogo">
 				</div>
-				<div class="col-12">
-					<h4 class="text-center ">A decentralized system is a system without a middleman. So all  transactions, regulations and communication is peer-to-peer directly (pals only club!)</h4>
+				<div class="col-11">
+					<h3 class="text-uppercase"><strong>Secure</strong></h3>
 				</div>
-		<div class="col-12">
-		  <p>Do you use Spotify? Then you’re probably aware of how poorly Spotify artists are paid. This, my dear, is because Spotify is a major middleman (almost a monopolist) between a user and an artist, charging large fees for artists  to host their content. So basically when you pay for your subscription on Spotify,  only a few cents are going to the artists you listen to. But with NFTs it is completely different. Because there is no such major middleman, you can pay the artist easily and without any extra charges. Just as if you were paying them cash in real world.</p>
-		</div>
-				
-				<div class="col-12">
-					<div></div>
+
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+				<div class="col-11">
+					<h4>Example: Dimanond</h4>
+				</div>
+				</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-4">
+					<p>Want to buy a diamond? But also want <img src="assets/artist.svg" alt="Artist"> to know exactly where it came from? Have no fear, for blockchain is here. Blockchain can track and authenticate diamonds, gems, and other metals through the global supply chain. Before, ring owners relied on certificates to prove authencity or that a diamond is sourced from a conflict-free zone.</p>
+				</div>
+				<div class="col-7">
+					<img src="assets/secure.png" alt="Secure" class="img-fluid">
 				</div>
 			</div>
-		<div class="col-md-4 col-sm-12">
-				<div class="col-12">
-					<h3 class="text-uppercase text-center "><strong>Secure</strong></h3>
-				</div>
-				<div class="col-12">
-					<h4 class="text-center ">A secure system is one that can’t be attacked or can fend it off</h4>
-				</div>
-			<div class="col-12">
-					<p>Want to buy a diamond? But also want to know exactly where it came from? Have no fear, for blockchain is here. Blockchain can track and authenticate diamonds, gems, and other metals through the global supply chain. Before, ring owners relied on certificates to prove authencity or that a diamond is sourced from a conflict-free zone. Soon, ring owners will be able to look up their rings on the same blockchain. You’ll be able to track exactly where your diamond has been with a permanent and unchangable record. </p>
-		  </div>
-				
-				<div class="col-12">
-					<div></div>
-				</div>
+			</div>
+
 	  </div>
-		<div class="col-md-4 col-sm-12">
-				<div class="col-12">
-					<h3 class="text-uppercase text-center "><strong>Scalable</strong></h3>
-				</div>
-				<div class="col-12">
-					<h4 class="text-center ">A scalable system is one that can grow, handle a lot of operations and do it fast (a growing boi)</h4>
-				</div>
-		<div class="col-12">
-					<p>Have you ever tried to get a loan from the bank? Then you know how much paperwork it requires, how long the process is and how silly mistakes can overcomplicate the process or result in rejection. Blockchain allows you to do it  more efficiently because all the necessary information is automatically recorded and stored. This eliminates silly mistakes, reduces costs and allows to handle more operations.</p>
-		  </div>
-				
-				<div class="col-12">
-					<div></div>
-				</div>
-	  </div>
-		</div>
     </div>
 	</div>
-	
+
+<!--Black section for introduction-->
 	<div class="container-fluid margin-top intro">
 	  <div class="container">
 		<div class="row">
 			<div class="col-10">
 				<h2 class="white text-left margin-top ">And were intended as certifying method for digital documents
 				</h2>
-			</div>			
+			</div>
 			<div class="col-2"></div>
 		</div>
 		</div>
-		
-	</div>
-	
-	
 
-    <div class="container-fluid" id="Six">
-	<div class="container margin-bottom">
+	</div>
+
+
+<!--Section Six: Explain-->
+  <div class="container-fluid" id="Six">
+	   <div class="container margin-bottom">
       <div class="row margin-top">
         <div class="col 8">
           <h4>FIRST THINGS FIRST</h4>
@@ -316,8 +307,8 @@
       </div>
 		<div class="row">
         <div class="col 10">
-            <h3>Blockchain came to allow to generate 
-				<mark class="popup" id="popupTimeSt" onclick="popupFunction3()"> time-stamping 
+            <h3>Blockchain came to allow to generate
+				<mark class="popup" id="popupTimeSt" onclick="popupFunction3()"> time-stamping
 					<span class="popuptext" id="popupTextTimeSt">
 					<div class="row">
 						<div class="col-sm-11"><h3>TIME-STAMPING</h3><p>Recording the date and time something was realized. For example:
@@ -330,9 +321,9 @@
 						<div class="col-sm-1"><span class="close">&times;</span>
 						</div>
 					</div>
-					</span>					
-				</mark> 
-				<mark class="popup" id="popupInfo" onclick="popupFunction4()"> information 
+					</span>
+				</mark>
+				<mark class="popup" id="popupInfo" onclick="popupFunction4()"> information
 					<span class="popuptext" id="popupTextInfo">
 					<div class="row">
 						<div class="col-sm-11"><h3>INFORMATION</h3><p>Almost all kind of digital information! For example:
@@ -345,8 +336,8 @@
 						<div class="col-sm-1"><span class="close">&times;</span>
 						</div>
 					</div>
-					</span>					
-				</mark> 
+					</span>
+				</mark>
 				computational proof for the chronological order of the information recorded</h3>
         </div>
 		<div class="col-2">
@@ -354,14 +345,15 @@
       </div>
 	</div>
 	</div>
-	<!--Black section fro introduction-->
+
+<!--Black section for introduction-->
 	<div class="container-fluid intro">
 		<div class="container">
 		<div class="row">
 			<div class="col-10"><h2 class="white text-left margin-top">Let's make it clear.
 			</h2>
 			</div>
-			
+
 			<div class="col-2"></div>
 		</div>
 		</div>
@@ -371,19 +363,21 @@
 		<div class="container">
       <div class="row">
 		<div class="col-sm-12">
-			<div class="myGif1">
+			<div class="">
           <!--<img src="" alt="Traditional Transaction" class="img-fluid">-->
-			  </div>        
+			  </div>
         </div>
       </div>
 	</div>
 	</div>
+
+<!--Black section for introduction-->
 <div class="container-fluid intro">
 		<div class="container">
 		<div class="row">
 			<div class="col-10"><h2 class="white text-left margin-top">How does it work?
 			</h2>
-			</div>			
+			</div>
 			<div class="col-2"></div>
 		</div>
 		</div>
@@ -398,17 +392,20 @@
 		</div>
 	<div class="row margin-top">
 		<div class="col-sm-5">
-			<div class="row margin">
-			<div class="col-12"><h6>RECORDED INFORMATION
-				</h6>
+			<div class="row">
+			<div class="col-4 greenbg">
+				<h6 class="number center">1</h6>
+			</div>
+			<div class="col-8 blockbg">
+				<h6>Recorded <br> Information</h6>
 			</div>
 			</div>
 			<div class="row">
 			<div class="col-4">
-				<h6 class="number centered">1</h6>
+
 			</div>
 			<div class="col-8">
-				Almost all kind of digital informations! For example:
+				<br>Almost all kind of digital informations! For example:
   				<ul>
 					<li>a document,</li>
 					<li>a patent, </li>
@@ -421,20 +418,24 @@
 		</div>
 		<div class="col-sm-7">
 			<div>
-				<img src="assets/illus-digInfo.svg" alt="Digital Information" class="img-fluid centered">
+				<img src="assets/illus-digInfo.svg" alt="Digital Information" class="img-fluid center">
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="row margin-top">
 		<div class="col-sm-5">
-			<div class="row margin">
-			<div class="col-12"><h6>A BLOCK</h6>
+			<div class="row">
+			<div class="col-4 greenbg">
+				<h6 class="number center">2</h6>
 			</div>
+			<div class="col-8 blockbg">
+				<h6>A <br> Block</h6>
 			</div>
+		  </div>
 			<div class="row">
 			<div class="col-4">
-				<h6 class="number centered">2</h6>
+
 			</div>
 			<div class="col-8">
 				<br> <br> A bundle of recorded informations
@@ -447,21 +448,24 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="row margin-top">
 		<div class="col-sm-5">
-			<div class="row margin">
-			<div class="col-12"><h6>A BLOCKCHAIN
-				</h6>
+			<div class="row">
+			<div class="col-4 greenbg">
+				<h6 class="number center">3</h6>
 			</div>
+			<div class="col-8 blockbg">
+				<h6>A <br> Blockchain</h6>
 			</div>
+		  </div>
 			<div class="row">
 			<div class="col-4">
-				<h6 class="number centered">3</h6>
+
 			</div>
 			<div class="col-8">
-				All the blocks linked together by their hashes* <br> <br>*a 
-				<mark class="popup" id="popupHash" onclick="popupFunction6()">hash 
+				<br>All the blocks linked together by their hashes*<br> <br>*a
+				<mark class="popup" id="popupHash" onclick="popupFunction6()">hash
 					<span class="popuptext" id="popupTextHash">
 					<div class="row">
 						<div class="col-sm-11"><p>Like the block hash of the first bitcoin block ever created:</p><p class="green"> 000000000019d6689c085ae165831e9<br>34ff763ae46a2a6c172b3f1b60a8ce26f </p>
@@ -469,8 +473,8 @@
 						<div class="col-sm-1"><span class="close">&times;</span>
 						</div>
 					</div>
-					</span>					
-				</mark> 
+					</span>
+				</mark>
 				is a unequivocally unique code that allows blocks to match together.
 			</div>
 			<div class="col-4">
@@ -494,7 +498,7 @@
 								<img src="assets/illus-blockHacked0.svg" alt="Hacker 0" class="img-fluid">
 							</div>
 						</div>
-						
+
 						<div class="col-md-6 col-sm-12">
 							<div class="col-12">
 							<h4>Hacked <br>information</h4>
@@ -503,16 +507,16 @@
 								<img src="assets/illus-blockHacked1.svg" alt="Hacker 1" class="img-fluid">
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="row">
 						<div class="col-12">
 							<p>If the transaction changes, then the hash changes too. It would require re-adjusting all the hashes in the chain make them match again. And this would require too high a power usage.</p>
 						</div>
-						
+
 					</div>
-					</span>					
-				</mark> 
+					</span>
+				</mark>
 			</div>
 			</div>
 		</div>
@@ -524,12 +528,13 @@
 	</div>
 </div>
 
+<!--Black section for introduction-->
 <div class="container-fluid intro">
 		<div class="container">
 		<div class="row">
 			<div class="col-10"><h2 class="white text-left margin-top">How are the hashes created?
 			</h2>
-			</div>			
+			</div>
 			<div class="col-2"></div>
 		</div>
 		</div>
@@ -538,8 +543,8 @@
 <div class="container margin-bottom">
 		<div class="row margin-top">
 			<div class="col-8">
-				<h3>There are different ways that people compete to find the hash to get a 
-					<mark class="popup" id="popupReward" onclick="popupFunction8()">reward 
+				<h3>There are different ways that people compete to find the hash to get a
+					<mark class="popup" id="popupReward" onclick="popupFunction8()">reward
 					<span class="popuptext" id="popupTextReward">
 					<div class="row">
 						<div class="col-sm-11"><h4>What’s the prize?</h4><p>It differs from blockchain to blockchain. For example, Bitcoin miners are rewarded with</p> <p class="green">6.25 BTC</p><p> for each block mined which is equivalent to</p><p class="green">$315 947.50</p>
@@ -547,8 +552,8 @@
 						<div class="col-sm-1"><span class="close">&times;</span>
 						</div>
 					</div>
-					</span>					
-				</mark> 
+					</span>
+				</mark>
 					for finding it these ways are called: consensuses. Let’s take a closer look.
 				</h3>
 			</div>
@@ -570,7 +575,7 @@
 				<div class="col-12">
 					<h5 class="">The one with the higher computer power is more likely to find the hash quicker and get the reward.</h5>
 				</div>
-				
+
 				<div class="col-12">
 					<div><img src="assets/pow.gif" alt="Proof of Work" class="img-fluid" width="100%"></div>
 				</div>
@@ -591,14 +596,14 @@
 				<div class="col-12">
 					<h5 class="">The one with the biggest stake is more likely to be selected and get the reward.</h5>
 				</div>
-				
+
 				<div class="col-12">
 					<div><img src="assets/pos.gif" alt="Proof of Work" class="img-fluid" width="100%"></div>
 				</div>
 			</div>
 			<div class="col-md-12 col-sm-12 margin-top margin-bottom">
 				<div class="col-12">
-					<h4 class="text-center white"> 
+					<h4 class="text-center white">
 						<mark class="popup" id="popupPow" onclick="popupFunction7()">Sounds an easy way to get money? <br>Discover what needs to be invested
 					<span class="popuptext" id="popupTextPow">
 					<div class="row">
@@ -609,7 +614,7 @@
 					</div>
 					<div class="row margin-top">
 						<div class="col-sm-8">
-							<p><b>1 BITCOIN = $50,219.77</b>							
+							<p><b>1 BITCOIN = $50,219.77</b>
 								<br>Mining consumes
 								<br> <b>1 BITCOIN = 1,500,000 Wh</b>
 								<br>Your desktop achieves
@@ -624,18 +629,30 @@
 							<img src="assets/blockchains-logo/ethereum.png" alt="Bitcoin" class="img-fluid">
 						</div>
 					</div>
-					</span>					
-				</mark> 
+					</span>
+				</mark>
 					</h4>
 				</div>
 			</div>
 		</div>
-		
-		
     </div>
 
-	
-<!--Footer-->
+<!--Black section for introduction-->
+<div class="container-fluid intro">
+	<div class="container">
+		<div class="row">
+			<div class="col-9"><h2 class="white text-left margin-top">Let's go deeper
+			</h2>
+			</div>
+      <div class="col-3">
+        <div><a href="section2.html"><button class="margin-top float-right" id="goBtn">→ Go ahead →</button></a></div>
+      </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Footer -->
 <footer>
       <div id="students">
         <h1>Authors</h1>
@@ -649,7 +666,7 @@
           <li>Severin Schwailghofer</li>
         </ul>
       </div>
-    
+
       <div id="faculty">
         <h1>Faculty</h1>
         <ul>
@@ -669,7 +686,7 @@
           <li>Beatrice Gobbo</li>
         </ul>
       </div>
-    
+
       <div id="contacts">
         <div class="logo">
           <img src="assets/Logo_DensityDesign.svg" alt="DensityDesign Lab" />
@@ -694,11 +711,13 @@
         </ul>
       </div>
     </footer>
-	
+
 
   <!-- d3.js library -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
