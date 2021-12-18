@@ -4,6 +4,7 @@ let scrNumber = 0;
 var clicks = 0;
 let messages = [];
 let renderer;
+var sketchWidth;
 
 function preload() {
   for (let i = 0; i < 25; i++) {
@@ -14,9 +15,28 @@ function preload() {
   console.log(screenshots.length + "items");
 }
 
-function mousePressed() {
+function setup() {
+  sketchWidth = document.getElementById("sketch-holder").offsetWidth;
+
+  let renderer = createCanvas(sketchWidth, windowHeight);
+  renderer.parent("sketch-holder");
+  renderer.style("display", "block");
+  background("black");
+
+  backButton = createButton("back");
+  backButton.position(100, 2500);
+  backButton.mousePressed(spliceScr);
+  renderer.mousePressed(canvasClicked);
+}
+function spliceScr() {
+  clicks--;
+  let i = scrimgs.length - 1;
+  scrimgs.splice(i, 1);
+  console.log("i " + i);
+}
+
+function canvasClicked() {
   clicks++;
-  console.log(clicks);
   let randomx = random(75);
   let randomy = random(75);
   //   let randomf = random(windowWidth / 4, (windowWidth / 4) * 3);
@@ -24,7 +44,6 @@ function mousePressed() {
   if (clicks >= screenshots.length) {
     let f = screenshots[24];
     let final = new Screenshot(randomx, randomy, f);
-    console.log(final.x, final.y);
     scrimgs.push(final);
   } else {
     let a = screenshots[clicks];
@@ -35,26 +54,23 @@ function mousePressed() {
   for (let i = 0; i < scrimgs.length; i++) {
     scrimgs[i].show();
   }
-}
-
-function setup() {
-  let renderer = createCanvas(windowWidth, windowHeight);
-  renderer.parent("sketch-holder");
-  renderer.style('display', 'block');
-  background("red");
-
-  console.log(renderer.width);
+  console.log("scrimgs " + scrimgs.length);
 }
 
 function draw() {
-  let renderer = createCanvas(windowWidth, windowHeight);
+  sketchWidth = document.getElementById("sketch-holder").offsetWidth;
+
+  let renderer = createCanvas(sketchWidth, windowHeight);
   renderer.parent("sketch-holder");
-  renderer.style('display', 'block');
+  renderer.style("display", "block");
 
   background("black");
 
-
   translate(renderer.width / 2, renderer.height / 2.5);
+  fill("white");
+  textSize(60);
+  textAlign(CENTER, CENTER);
+  text("Click to see", 0, 0);
   imageMode(CENTER);
 
   for (let i = 0; i < scrimgs.length; i++) {
