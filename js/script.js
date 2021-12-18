@@ -12,19 +12,8 @@ function popupFunction2() {
   popup.classList.toggle("show");
 }
 
-function popupFunction3() {
-  var popup = document.getElementById("popupTextTimeSt");
-  popup.classList.toggle("show");
-}
-
 function popupFunction4() {
   var popup = document.getElementById("popupTextInfo");
-  popup.classList.toggle("show");
-}
-
-
-function popupFunction7() {
-  var popup = document.getElementById("popupTextPow");
   popup.classList.toggle("show");
 }
 
@@ -39,7 +28,8 @@ function hackFunction() {
 	document.getElementById("okHash").style.display = "none";
 	document.getElementById("fix").style.display = "block";
 	document.getElementById("hacker").style.display = "none";
-  
+  document.getElementById("hackerText").style.display = "block";
+
 }
 
 function fixFunction() {
@@ -47,7 +37,8 @@ function fixFunction() {
 	document.getElementById("okHash").style.display = "block";
 	document.getElementById("fix").style.display = "none";
 	document.getElementById("hacker").style.display = "block";
-  
+  document.getElementById("hackerText").style.display = "none";
+
 }
 
 d3.html("assets/timeline.svg").then(function(newDocument3) {
@@ -78,7 +69,7 @@ d3.html("assets/keywords/keywords.svg").then(function(newDocument2) {
   //On each group do something when i click it
   const clusters = d3.selectAll("#key > g");
   clusters.on("click", function() {
-    clusters.style("opacity" , 0.05);
+    clusters.style("opacity" , 0.02);
     d3.select(this).style("opacity", 1);
   });
 

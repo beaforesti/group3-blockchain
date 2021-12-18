@@ -42,11 +42,6 @@
   margin-bottom: 120px;
 }
 
-/*.bottomleft {
-  position: relative;
-  bottom: 2px;
-  left: 16px;
-}*/
 
 /* Sections containers*/
 
@@ -131,6 +126,7 @@ body {
   background-color: #ffffff;
   font-size: 18px;
   font-family: "Readex Pro", sans-serif;
+  cursor: url("../assets/cursor.png"), auto;
 }
 
 /* h1, h2, h3, h4, h5 style */
@@ -421,7 +417,7 @@ li,
 
 .popup {
   position: relative;
-  cursor: pointer;
+  cursor: help;
   display: inline-block;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -456,31 +452,7 @@ li,
   animation: fadeIn 0.2s;
 }
 
-#popupTimeSt .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 0.2s;
-  animation: fadeIn 0.2s;
-}
-
 #popupInfo .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 0.2s;
-  animation: fadeIn 0.2s;
-}
-
-#popupHacker .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 0.2s;
-  animation: fadeIn 0.2s;
-}
-
-#popupHash .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 0.2s;
-  animation: fadeIn 0.2s;
-}
-
-#popupPow .show {
   visibility: visible;
   -webkit-animation: fadeIn 0.2s;
   animation: fadeIn 0.2s;
@@ -526,25 +498,6 @@ li,
   cursor: pointer;
 }
 
-/* Images */
-/* Hover functions for images */
-.imgApp {
-  opacity: 0.3;
-}
-
-.imgApp:hover {
-  opacity: 1;
-  transform: scale(1.1) translate(0%, -50%);
-}
-
-#okHash{
-	display: block;
-}
-
-#hackedHash{
-	display: none;
-}
-
 #hacker{
 	display: block;
 	cursor: url("../assets/cursor-hack.png"), pointer;
@@ -588,6 +541,31 @@ li,
 	border-left: 1px solid #01F293;
 }
 
+
+
+/* Images */
+/* Hover functions for images */
+.imgApp {
+  opacity: 0.3;
+}
+
+.imgApp:hover {
+  opacity: 1;
+  transform: scale(1.1) translate(0%, -50%);
+}
+
+#okHash{
+	display: block;
+}
+
+#hackedHash{
+	display: none;
+}
+
+#hackerText{
+	display: none;
+	margin-top: 10px;
+}
 
 g#year-timeline > g {
   cursor: pointer; /* The hand cursor will show over group */

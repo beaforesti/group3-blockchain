@@ -5,6 +5,7 @@ var clicks = 0;
 let messages = [];
 let renderer;
 var sketchWidth;
+let myFont;
 
 function preload() {
   for (let i = 0; i < 25; i++) {
@@ -13,6 +14,7 @@ function preload() {
     );
   }
   console.log(screenshots.length + "items");
+  myFont = loadFont('font/ReadexPro-Regular.ttf');
 }
 
 function setup() {
@@ -21,11 +23,14 @@ function setup() {
   let renderer = createCanvas(sketchWidth, windowHeight);
   renderer.parent("sketch-holder");
   renderer.style("display", "block");
-  background("black");
+  background('#01f293');
 
   backButton = createButton("back");
-  backButton.position(100, 2500);
+  backButton.position(200, 3700);
   backButton.mousePressed(spliceScr);
+  backButton.style('font-size', '18px');
+  backButton.style('font', 'myFont');
+  backButton.style('background-color', '#01f293');
   renderer.mousePressed(canvasClicked);
 }
 function spliceScr() {
@@ -68,9 +73,10 @@ function draw() {
 
   translate(renderer.width / 2, renderer.height / 2.5);
   fill("white");
-  textSize(60);
+  textSize(35);
+  textFont(myFont);
   textAlign(CENTER, CENTER);
-  text("Click to see", 0, 0);
+  text("Click to see where 'sustainable' appears", 0, 0);
   imageMode(CENTER);
 
   for (let i = 0; i < scrimgs.length; i++) {
