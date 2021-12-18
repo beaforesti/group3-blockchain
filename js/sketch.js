@@ -18,19 +18,24 @@ function preload() {
 function setup() {
   sketchWidth = document.getElementById("sketch-holder").offsetWidth;
 
-  console.log("sketch width " + sketchWidth);
+  // console.log("sketch width " + sketchWidth);
   let renderer = createCanvas(sketchWidth, windowHeight);
   renderer.parent("sketch-holder");
   renderer.style("display", "block");
   background("black");
 
-  console.log("renderer width " + renderer.width);
+  // console.log("renderer width " + renderer.width);
   renderer.mousePressed(canvasClicked);
+  backButton = createButton("back");
+  // backButton.style('background-color', 255);
+  backButton.position(100, 2500);
+  console.log("Button pos " + backButton.x);
+
+  backButton.mousePressed(spliceScr);
 }
 
 function canvasClicked() {
   clicks++;
-  console.log(clicks);
   let randomx = random(75);
   let randomy = random(75);
   //   let randomf = random(windowWidth / 4, (windowWidth / 4) * 3);
@@ -38,7 +43,6 @@ function canvasClicked() {
   if (clicks >= screenshots.length) {
     let f = screenshots[24];
     let final = new Screenshot(randomx, randomy, f);
-    console.log(final.x, final.y);
     scrimgs.push(final);
   } else {
     let a = screenshots[clicks];
@@ -49,6 +53,7 @@ function canvasClicked() {
   for (let i = 0; i < scrimgs.length; i++) {
     scrimgs[i].show();
   }
+  console.log("scrimgs " + scrimgs.length);
 }
 
 function draw() {
@@ -61,11 +66,21 @@ function draw() {
   background("black");
 
   translate(renderer.width / 2, renderer.height / 2.5);
+  fill("white");
+  textSize(60);
+  textAlign(CENTER, CENTER);
+  text("Click to see", 0, 0);
   imageMode(CENTER);
 
   for (let i = 0; i < scrimgs.length; i++) {
     scrimgs[i].show();
   }
+}
+
+function spliceScr() {
+  let i = scrimgs.length - 1;
+  scrimgs.splice(i, 1);
+  console.log("i " + i);
 }
 
 class Screenshot {
