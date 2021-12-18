@@ -15,7 +15,20 @@ function preload() {
   console.log(screenshots.length + "items");
 }
 
-function mousePressed() {
+function setup() {
+  sketchWidth = document.getElementById("sketch-holder").offsetWidth;
+
+  console.log("sketch width " + sketchWidth);
+  let renderer = createCanvas(sketchWidth, windowHeight);
+  renderer.parent("sketch-holder");
+  renderer.style("display", "block");
+  background("black");
+
+  console.log("renderer width " + renderer.width);
+  renderer.mousePressed(canvasClicked);
+}
+
+function canvasClicked() {
   clicks++;
   console.log(clicks);
   let randomx = random(75);
@@ -36,18 +49,6 @@ function mousePressed() {
   for (let i = 0; i < scrimgs.length; i++) {
     scrimgs[i].show();
   }
-}
-
-function setup() {
-  sketchWidth = document.getElementById("sketch-holder").offsetWidth;
-
-  console.log("sketch width " + sketchWidth);
-  let renderer = createCanvas(sketchWidth, windowHeight);
-  renderer.parent("sketch-holder");
-  renderer.style("display", "block");
-  background("black");
-
-  console.log("renderer width " + renderer.width);
 }
 
 function draw() {
