@@ -336,15 +336,19 @@ li,
   right: 30px;
   bottom: 30px;
   padding: 3px 8px;
-  border-bottom: 5px solid #0d0d0d;
-  border-right: 5px solid #0d0d0d;
-  border-top: 1px solid #0d0d0d;
-  border-left: 1px solid #0d0d0d;
+  border-bottom: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
 }
 
 #aboutBtn:hover {
   background-color: #ffffff;
   color: #0d0d0d;
+  border-bottom: 5px solid #0d0d0d;
+  border-right: 5px solid #0d0d0d;
+  border-top: 1px solid #0d0d0d;
+  border-left: 1px solid #0d0d0d;
 }
 
 #aboutBtn:active {
