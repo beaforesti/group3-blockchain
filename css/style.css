@@ -34,6 +34,10 @@
 	margin-top: 80px;
 }
 
+.margin-top-s{
+	margin-top: 50px;
+}
+
 .margin-bottom{
 	margin-bottom: 120px;
 }
@@ -48,9 +52,12 @@
 /* Sections containers*/
 
 #videoTitle{
-	width:90vw;
-	max-width: 1000px;
-	max-height: inherit;
+	height: 0;
+	padding-bottom: calc(56.25%);
+	position: relative;
+	width: 80%;
+
+
 }
 
 #One{
@@ -227,6 +234,22 @@ mark:hover{
 }
 
 #trilemma1 {
+	border: solid;
+	border-bottom: 10px solid #0136F2;
+	border-right: 10px solid #0136F2;
+	border-top: 1px solid #0136F2;
+	border-left: 1px solid #0136F2;
+}
+
+#trilemma2 {
+	border: solid;
+	border-bottom: 10px solid #0136F2;
+	border-right: 10px solid #0136F2;
+	border-top: 1px solid #0136F2;
+	border-left: 1px solid #0136F2;
+}
+
+#trilemma3 {
 	border: solid;
 	border-bottom: 10px solid #0136F2;
 	border-right: 10px solid #0136F2;

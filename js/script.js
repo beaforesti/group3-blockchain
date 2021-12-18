@@ -79,7 +79,7 @@ d3.html("assets/timeline.svg").then(function(newDocument3) {
 
 });
 
-d3.html("assets/keywords/community-keywords.svg").then(function(newDocument2) {
+d3.html("assets/keywords/keywords.svg").then(function(newDocument2) {
 
   const mySvg2 = newDocument2.querySelector("svg");
 
@@ -89,7 +89,7 @@ d3.html("assets/keywords/community-keywords.svg").then(function(newDocument2) {
   //On each group do something when i click it
   const clusters = d3.selectAll("#key > g");
   clusters.on("click", function() {
-    clusters.style("opacity" , 0.2);
+    clusters.style("opacity" , 0.05);
     d3.select(this).style("opacity", 1);
   });
 

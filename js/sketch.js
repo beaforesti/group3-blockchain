@@ -16,11 +16,11 @@ function setup() {
 
 
 
- //const container = select("#sketch-holder");
+ // const container = select("#sketch-holder");
  //
- //for (let i = 0; i < myImages.length; i++) {
- //container.createImg(myImages[i], "DDD").position(i*10, i*10);
- //}
+ // for (let i = 0; i < myImages.length; i++) {
+ // container.createImg(myImages[i], "DDD").position(i*10, i*10);
+ // }
 
 }
 
