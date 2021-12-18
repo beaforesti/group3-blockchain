@@ -118,6 +118,8 @@
 	width: 100%;
 	height: inherit;
 	margin: 0;
+	padding-bottom: 100px;
+	overflow: hidden;
 }
 
 .intro {
@@ -220,6 +222,18 @@ mark:hover{
 	padding-right: 10px;
 }
 
+.greenbd{
+	background-color: #ffffff;
+	border: solid;
+	border-color: #01F293;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+.bdblack{
+	border-left: 2px solid #0D0D0D;
+}
+
 .blockbg {
 	background-color: #ffffff;
 	padding-left: 10px;
@@ -235,31 +249,13 @@ mark:hover{
 	background-color: #ffffff;
 	padding-left: 10px;
 	padding-right: 10px;
+	border: solid;
+	border-bottom: 10px solid #01F293;
+	border-right: 10px solid #01F293;
+	border-top: 1px solid #01F293;
+	border-left: 1px solid #01F293;
 }
 
-#trilemma1 {
-	border: solid;
-	border-bottom: 10px solid #0136F2;
-	border-right: 10px solid #0136F2;
-	border-top: 1px solid #0136F2;
-	border-left: 1px solid #0136F2;
-}
-
-#trilemma2 {
-	border: solid;
-	border-bottom: 10px solid #0136F2;
-	border-right: 10px solid #0136F2;
-	border-top: 1px solid #0136F2;
-	border-left: 1px solid #0136F2;
-}
-
-#trilemma3 {
-	border: solid;
-	border-bottom: 10px solid #0136F2;
-	border-right: 10px solid #0136F2;
-	border-top: 1px solid #0136F2;
-	border-left: 1px solid #0136F2;
-}
 
 .trilemmaLogo {
 	width: 50px;
@@ -530,6 +526,56 @@ border: none;
 	transform: scale(1.1) translate(0%, -50%);
 }
 
+#okHash{
+	display: block;
+}
+
+#hackedHash{
+	display: none;
+}
+
+#hacker{
+	display: block;
+	cursor: url("../assets/cursor-hack.png"), pointer;
+	padding: 5px;
+  background-color: #A500FF;
+	color: #ffffff;
+	border-bottom: 5px solid #0D0D0D;
+	border-right: 5px solid #0D0D0D;
+	border-top: 1px solid #0D0D0D;
+	border-left: 1px solid #0D0D0D;
+}
+
+#hacker:hover{
+	background-color: #ffffff;
+	color: #0d0d0d;
+	border-bottom: 5px solid #A500FF;
+	border-right: 5px solid #A500FF;
+	border-top: 1px solid #A500FF;
+	border-left: 1px solid #A500FF;
+}
+
+#fix{
+	display: none;
+	cursor: pointer;
+	padding: 5px;
+	margin-top: 5px;
+  background-color: #01F293;
+	color: #ffffff;
+	border-bottom: 5px solid #0D0D0D;
+	border-right: 5px solid #0D0D0D;
+	border-top: 1px solid #0D0D0D;
+	border-left: 1px solid #0D0D0D;
+}
+
+#fix:hover{
+	background-color: #ffffff;
+	color: #0d0d0d;
+	border-bottom: 5px solid #01F293;
+	border-right: 5px solid #01F293;
+	border-top: 1px solid #01F293;
+	border-left: 1px solid #01F293;
+}
 
 
 g#year-timeline > g {
@@ -588,9 +634,9 @@ footer img {
     width: auto;
 }
 
-footer h1 {
+footer h3 {
     margin: 0 0 1rem 0;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
