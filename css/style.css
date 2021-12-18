@@ -114,7 +114,11 @@
 	border-color: #0D0D0D;
 }
 
-
+#sketch-holder{
+	width: 100%;
+	height: inherit;
+	margin: 0;
+}
 
 .intro {
 	height: inherit;
