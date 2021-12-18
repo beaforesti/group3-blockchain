@@ -19,8 +19,8 @@ function mousePressed() {
   console.log(clicks);
   let randomx = random(75);
   let randomy = random(75);
-  let randomf = random(windowWidth / 4, (windowWidth / 4) * 3);
-  let randomfy = random(150);
+  //   let randomf = random(windowWidth / 4, (windowWidth / 4) * 3);
+  //   let randomfy = random(150);
   if (clicks >= screenshots.length) {
     let f = screenshots[24];
     let final = new Screenshot(randomx, randomy, f);
@@ -48,7 +48,7 @@ function draw() {
   let renderer = createCanvas(windowWidth, windowHeight / 1.2);
   renderer.parent("sketch-holder");
 
-  background("grey");
+  background("black");
 
   translate(renderer.width / 2, renderer.height / 2.5);
   imageMode(CENTER);
