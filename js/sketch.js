@@ -4,6 +4,7 @@ let scrNumber = 0;
 var clicks = 0;
 let messages = [];
 let renderer;
+var sketchWidth;
 
 function preload() {
   for (let i = 0; i < 25; i++) {
@@ -38,21 +39,25 @@ function mousePressed() {
 }
 
 function setup() {
-  let renderer = createCanvas(windowWidth, windowHeight);
-  renderer.parent("sketch-holder");
-  renderer.style('display', 'block');
-  background("red");
+  sketchWidth = document.getElementById("sketch-holder").offsetWidth;
 
-  console.log(renderer.width);
+  console.log("sketch width " + sketchWidth);
+  let renderer = createCanvas(sketchWidth, windowHeight);
+  renderer.parent("sketch-holder");
+  renderer.style("display", "block");
+  background("black");
+
+  console.log("renderer width " + renderer.width);
 }
 
 function draw() {
-  let renderer = createCanvas(windowWidth, windowHeight);
+  sketchWidth = document.getElementById("sketch-holder").offsetWidth;
+
+  let renderer = createCanvas(sketchWidth, windowHeight);
   renderer.parent("sketch-holder");
-  renderer.style('display', 'block');
+  renderer.style("display", "block");
 
   background("black");
-
 
   translate(renderer.width / 2, renderer.height / 2.5);
   imageMode(CENTER);
