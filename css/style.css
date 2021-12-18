@@ -8,6 +8,7 @@
 - Buttons
 - Images
 - Footer
+- About page
 */
 
 /* Alignment and margins*/
@@ -325,15 +326,20 @@ li,
 #aboutBtn {
   background-color: #0d0d0d;
   color: #ffffff;
-  font-family: "Noto Sans Mono", monospace;
+  font-family: "ReadexPro", sans-serif;;
   font-size: 1.5rem;
   border-radius: 0;
   border-color: #aaaaaa;
   border-width: 0px 5px 5px 0px;
   position: fixed;
   z-index: 2;
-  right: 10px;
-  bottom: 10px;
+  right: 30px;
+  bottom: 30px;
+  padding: 3px 8px;
+  border-bottom: 5px solid #0d0d0d;
+  border-right: 5px solid #0d0d0d;
+  border-top: 1px solid #0d0d0d;
+  border-left: 1px solid #0d0d0d;
 }
 
 #aboutBtn:hover {
@@ -584,6 +590,16 @@ g#key > g {
   transition: 0.3s ease opacity;
   cursor: pointer;
 }
+
+/* About page */
+#aOne{
+	height: inherit;
+  background-image: url("../assets/bg-one.png");
+  position: relative;
+  text-align: center;
+	padding-bottom: 200px;
+}
+
 
 /* Footer */
 @media screen and (min-width: 601px) {
