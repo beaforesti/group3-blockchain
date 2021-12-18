@@ -28,13 +28,6 @@ function setup() {
   renderer.parent("sketch-holder");
   renderer.style("display", "block");
   background("#01f293");
-
-  backButton = createButton("back");
-  backButton.position(200, 3700);
-  // backButton.mousePressed(spliceScr);
-  backButton.style("font-size", "18px");
-  backButton.style("font", "myFont");
-  backButton.style("background-color", "#01f293");
   renderer.mousePressed(canvasClicked);
   noCursor();
 }
@@ -72,6 +65,12 @@ function canvasClicked() {
     scrimgs.splice(i, 1);
     console.log("i " + i);
   }
+
+  for (let i = 0; i < scrimgs.length; i++) {
+    scrimgs[i].show();
+  }
+  console.log("scrimgs " + scrimgs.length);
+
 }
 
 function draw() {
