@@ -18,20 +18,21 @@ function preload() {
 function setup() {
   sketchWidth = document.getElementById("sketch-holder").offsetWidth;
 
-  // console.log("sketch width " + sketchWidth);
   let renderer = createCanvas(sketchWidth, windowHeight);
   renderer.parent("sketch-holder");
   renderer.style("display", "block");
   background("black");
 
-  // console.log("renderer width " + renderer.width);
-  renderer.mousePressed(canvasClicked);
   backButton = createButton("back");
-  // backButton.style('background-color', 255);
   backButton.position(100, 2500);
-  console.log("Button pos " + backButton.x);
-
   backButton.mousePressed(spliceScr);
+  renderer.mousePressed(canvasClicked);
+}
+function spliceScr() {
+  clicks--;
+  let i = scrimgs.length - 1;
+  scrimgs.splice(i, 1);
+  console.log("i " + i);
 }
 
 function canvasClicked() {
@@ -75,12 +76,6 @@ function draw() {
   for (let i = 0; i < scrimgs.length; i++) {
     scrimgs[i].show();
   }
-}
-
-function spliceScr() {
-  let i = scrimgs.length - 1;
-  scrimgs.splice(i, 1);
-  console.log("i " + i);
 }
 
 class Screenshot {
