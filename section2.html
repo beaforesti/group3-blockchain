@@ -40,7 +40,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
   </head>
 
-  <body>
+  <body style="background-color:#0D0D0D">
     <!--Home button -->
     <a href="index.html"><button id="homeBtn"></button></a>
     <!--Abuot button -->
@@ -52,15 +52,17 @@
     <div class="container-fluid intro">
       <div class="container">
         <div class="row">
-          <div class="col-9">
-            <h2 class="text-left margin-top white">Let’s take a look on the timeline</h2>
+          <div class="col-12">
+          <div>
+            <a href="index.html"><button class="margin-top float-left" id="goBtn">
+                ← Go back ←
+              </button></a>
           </div>
-          <div class="col-sm-3">
-            <div>
-              <a href="index.html"><button class="margin-top float-right" id="goBtn">
-                  ← Go back ←
-                </button></a>
-            </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-left margin-top white">Let’s take a look on the timeline</h2>
           </div>
         </div>
       </div>
@@ -69,7 +71,21 @@
     <!--Timeline container with d3-->
     <div class="container-fluid p-0" id="timeline-container"></div>
 
-    <div class="container-fluid intro2">
+
+    <div class="container-fluid intro margin-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-left margin-top white">Did you notice that PoS boom was later than PoW? Also, that there are more  PoS launched in recent years than PoW blockchains?
+              <br> <br> This is because PoW is not considered to be a sustainable enough blockchain, so new “more sustainable” alternatives emerge.
+              <br> <br>But how do they describe their <b>“sustainability”?</b></h4>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid intro">
       <div class="container">
         <div class="row">
           <div class="col-11">
@@ -86,12 +102,12 @@
     <div class="container-fluid p-0" id="keywords-container1"></div>
 
     <!--Green section for introduction-->
-    <div class="container-fluid intro">
+    <div class="container-fluid intro margin-top">
       <div class="container">
         <div class="row">
           <div class="col-11">
             <h2 class="text-left margin-top white">
-              Let's look for the word sustainable
+              But context matters, discover what’s being said about <b class="green"><i>Sustainable</i></b>
             </h2>
           </div>
           <div class="col-1"></div>
@@ -104,7 +120,7 @@
     <div class="container-fluid p-0" id="sketch-holder"></div>
 
     <!--Conclusion section-->
-    <div class="container-fluid intro">
+    <div class="container-fluid intro margin-top">
       <div class="container">
         <div class="row">
           <div class="col-11">
@@ -116,7 +132,7 @@
     </div>
 
     <!--Footer-->
-    <footer>
+    <footer style="background-color:#ffffff">
       <div id="students">
         <h3>Authors</h3>
         <ul>
