@@ -209,7 +209,7 @@ border: solid #0d0d0d;
   border: none;
   padding-left: 10px;
   padding-right: 10px;
-	
+
 }
 
 .greenbg {
@@ -346,7 +346,7 @@ li,
   padding: 3px 8px;
 	border: solid #ffffff;
 	box-shadow: 5px 5px #ffffff;
-	
+
 }
 
 #aboutBtn:hover {
@@ -407,6 +407,10 @@ li,
   border: none;
   box-shadow: 0 5px #0d0d0d;
   transform: translateY(4px);
+}
+
+a, a:hover{
+  color: #4BE6FD;
 }
 
 /* Popup */
