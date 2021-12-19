@@ -23,7 +23,7 @@
 <script src="js/p5.sound.min.js"></script>
 <script src="js/sketch.js"></script>-->
 
-  <title>Demistifying Blockchain</title>
+  <title>Demystifying Blockchain</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
 </head>
 
@@ -49,7 +49,7 @@
   <div class="container-fluid p-0" id="One">
     <div class="align-center" id="videoTitle">
       <iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/61bc618cbb293900bbed088e?autoplay=true"
-        style="border:10px; height:80%; left:0; overflow:hidden; position:absolute; top:30px; width:100%" title="Embedded content made on Kapwing" width="100%"></iframe>
+        style="border:10px; height:80%; left:0; overflow:hidden; position:absolute; top:30px; width:100%" title="Embedded content made on Kapwing" width="100%" id="theVideo"></iframe>
     </div>
   </div>
 
@@ -89,9 +89,9 @@
         </div>
       </div>
       <div class="row margin-top">
-        <div class="col-sm-10">
+        <div class="col-sm-12">
           <h2 class="white">Hi :)</h2>
-          <h3 class="white">Blockchains and nfts are not just buzz, it's already here and in action - If you spent any time on the internet you probably have heard of
+          <h3 class="white">Blockchain is not just buzz word! It is used here and now. If you spent any time on the internet you’ve probably already heard of
             <mark class="popup" id="popupCrypto" onclick="popupFunction1()"> crypto
               <span class="popuptext" id="popupTextCrypto">
                 <div class="row">
@@ -117,11 +117,15 @@
                   </div>
                 </div>
               </span>
-            </mark> but we’re here to broaden your horizons.</h3>
-        </div>
-        <div class="col-2">
+            </mark></h3>
         </div>
       </div>
+		<div class="row margin-top-s margin-bottom">
+			<div class="col-sm-12">
+				<h3 class="white">But what makes it so special? How does it work? What are the differences between different blockchains? And how do they present these differences?</h3>
+			
+			</div>
+		</div>
     </div>
   </div>
 
@@ -230,143 +234,110 @@
   <div class="container-fluid" id="Five">
     <div class="container">
       <div class="row margin-top">
-        <div class="col-12">
-          <h3>Blockchains are beneficial because they are:</h3>
-        </div>
-      </div>
-      <div class="row margin-top">
         <div class="col-sm-4">
           <div>
-            <h3 class="text-uppercase text-center">Secure</h3>
+            <h3 class="text-uppercase text-center">Security</h3>
           </div>
           <img src="assets/secure.png" alt="Secure" class="img-fluid align-center">
         </div>
         <div class="col-sm-4">
           <div>
-            <h3 class="text-uppercase text-center">Decentralized</h3>
+            <h3 class="text-uppercase text-center">Decentralization</h3>
           </div>
           <img src="assets/decentralized.png" alt="Decentralized" class="img-fluid align-center">
         </div>
         <div class="col-sm-4">
           <div>
-            <h3 class="text-uppercase text-center">Scalable</h3>
+            <h3 class="text-uppercase text-center">Scalability</h3>
           </div>
           <img src="assets/scalable.png" alt="Scalable" class="img-fluid align-center">
         </div>
       </div>
 
-      <div class="row margin-top trilemma">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-1 margin-top-s">
-              <img src="assets/secure2.png" alt="Secure logo" class="trilemmaLogo">
+      <div class="container margin-top trilemma">
+          <div class="row margin-top-s">
+			  <div class="col-md-1 col-sm-12">
+				  <div class="col-12"><img src="assets/secure2.png" alt="Secure logo" class="trilemmaLogo"> </div>
+				<div class="col-12"></div>
+			  </div>
+			<div class="col-md-4 col-sm-12">
+			<div class="col-12">
+              <h3 class="text-uppercase"><strong>Security</strong></h3>
             </div>
-            <div class="col-11">
-              <h3 class="text-uppercase margin-top-s"><strong>Secure</strong></h3>
+			<div class="col-12 margin-bottom margin-top-s">
+              <p>Want to <b>buy a diamond</b>? But you also want to know exactly where it came from and that it’s the real deal? In real life you have to the trust people you are buying from, on what they say and show  you. </p><p><b>But blockchain is here to save the day. </b> It can store all the information about the diamond from its origin. It can track and authenticate the diamond, so you can be sure  about what you are buying. The system is built in a way that no one can change or forge this information to try to trick you. It works the same with artworks, money, produce, or anything you’re looking for. </p>
+				<h4><b>A secure system is one that can’t be attacked or can fend the attack off</b></h4>			
             </div>
-
-          </div>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-11">
-              <h4 class="text-uppercase">Example: Diamond</h4>
+          	</div>
+            <div class="col-md-7 col-sm-12">            
+            <div class="col-12">
+              <h5 class="text-uppercase text-left">Without Blockchain</h5>
+			<img src="assets/gif/diamond_general.gif" alt="Diamond" class="img-fluid">
             </div>
-          </div>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-sm-4">
-              <p>Want to buy a diamond? But also want to know exactly where it came from? Have no fear, for blockchain is here. Blockchain can track and authenticate diamonds, gems, and other metals through the global supply chain. Before, ring
-                owners relied on certificates to prove authencity or that a diamond is sourced from a conflict-free zone.</p>
-            </div>
-            <div class="col-sm-7">
-              Without Blockchain<img src="assets/gif/diamond_general.gif" alt="Diamond" class="img-fluid">
+			<div class="col-12 margin-top-s">
+              <h5 class="text-uppercase text-left green">With Blockchain</h5>
+				<img src="assets/gif/diamond_blockchain.gif" alt="Diamond2" class="img-fluid">
             </div>
           </div>
-          <div class="row margin-bottom">
-            <div class="col-1"></div>
-            <div class="col-4"></div>
-            <div class="col-sm-7">
-              With Blockchain<img src="assets/gif/diamond_blockchain.gif" alt="Diamond2" class="img-fluid">
-            </div>
-          </div>
+		  </div>
         </div>
-      </div>
-
-      <div class="row margin-top trilemma">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-1 margin-top-s">
-              <img src="assets/decentralized2.png" alt="Secure logo" class="trilemmaLogo">
+		
+		
+		<div class="container margin-top trilemma">
+          <div class="row margin-top-s">
+			  <div class="col-md-1 col-sm-12">
+				  <div class="col-12"><img src="assets/decentralized2.png" alt="Decentralized logo" class="trilemmaLogo"> </div>
+				<div class="col-12"></div>
+			  </div>
+			<div class="col-md-4 col-sm-12">
+			<div class="col-12">
+              <h3 class="text-uppercase"><strong>Decentralization</strong></h3>
             </div>
-            <div class="col-11">
-              <h3 class="text-uppercase margin-top-s"><strong>Decentralized</strong></h3>
+			<div class="col-12 margin-bottom margin-top-s">
+              <p>Have you purchased something on <b>Ebay</b>? Then you know that you’re buying something from another user, and the platform just facilitates and secures the process, connecting sellers and buyers. To do this, it charges a fee.</p><p><b>But blockchain allows users to trade peer-to-peer, without a middleman.</b> The algorithm verifies if users trade the items they claimed (ex. this specific bag for this specific amount of money) and validates the transaction. No middleman involved.</p>
+				<h4><b>A decentralized system is a system that allows all transactions be peer-to-peer directly</b></h4>			
             </div>
-
-          </div>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-11">
-              <h4 class="text-uppercase">Example: Dimanond</h4>
+          	</div>
+            <div class="col-md-7 col-sm-12">            
+            <div class="col-12">
+              <h5 class="text-uppercase text-left">Without Blockchain</h5>
+			<img src="assets/gif/decentralization_general.gif" alt="Decentralization general" class="img-fluid">
             </div>
-          </div>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-sm-4">
-              <p>Want to buy a diamond? But also want to know exactly where it came from? Have no fear, for blockchain is here. Blockchain can track and authenticate diamonds, gems, and other metals through the global supply chain. Before, ring
-                owners relied on certificates to prove authencity or that a diamond is sourced from a conflict-free zone.</p>
-            </div>
-            <div class="col-sm-7">
-              Without Blockchain<img src="assets/gif/decentralization_general.gif" alt="Decentralization general" class="img-fluid">
+			<div class="col-12 margin-top-s">
+              <h5 class="text-uppercase text-left green">With Blockchain</h5>
+				<img src="assets/gif/decentralization_blockchain.gif" alt="Decentralization blockchain" class="img-fluid">
             </div>
           </div>
-          <div class="row margin-bottom">
-            <div class="col-1"></div>
-            <div class="col-4"></div>
-            <div class="col-sm-7">
-              With Blockchain<img src="assets/gif/decentralization_blockchain.gif" alt="Decentralization blockchain" class="img-fluid">
-            </div>
-          </div>
+		  </div>
         </div>
-      </div>
-
-      <div class="row margin-top trilemma">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-1 margin-top-s">
-              <img src="assets/scalable2.png" alt="Secure logo" class="trilemmaLogo">
+      
+		<div class="container margin-top trilemma">
+          <div class="row margin-top-s">
+			  <div class="col-md-1 col-sm-12">
+				  <div class="col-12"><img src="assets/scalable2.png" alt="Scalable logo" class="trilemmaLogo"> </div>
+				<div class="col-12"></div>
+			  </div>
+			<div class="col-md-4 col-sm-12">
+			<div class="col-12">
+              <h3 class="text-uppercase"><strong>Scalability</strong></h3>
             </div>
-            <div class="col-11">
-              <h3 class="text-uppercase margin-top-s"><strong>Scalable</strong></h3>
+			<div class="col-12 margin-bottom margin-top-s">
+              <p>Have you ever tried to get a <b>loan from the bank</b>? If so, you know how much paperwork it requires, how long the process is and how small mistakes can delay or reject the application.</p> <p><b>But blockchain allows you to do it more efficiently</b> because all the necessary information is automatically recorded and stored. This eliminates silly mistakes, reduces costs and can handle more operations.</p>
+				<h4><b>A scalable system is one that can grow, handle a lot of operations and do it fast</b></h4>			
             </div>
-
-          </div>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-11">
-              <h4 class="text-uppercase">Example: Dimanond</h4>
+          	</div>
+            <div class="col-md-7 col-sm-12">            
+            <div class="col-12">
+              <h5 class="text-uppercase text-left">Without Blockchain</h5>
+			<img src="assets/gif/loan_general.gif" alt="Scalable" class="img-fluid">
             </div>
-          </div>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-sm-4">
-              <p>Want to buy a diamond? But also want to know exactly where it came from? Have no fear, for blockchain is here. Blockchain can track and authenticate diamonds, gems, and other metals through the global supply chain. Before, ring
-                owners relied on certificates to prove authencity or that a diamond is sourced from a conflict-free zone.</p>
-            </div>
-            <div class="col-sm-7">
-              Without Blockchain
-              <img src="assets/gif/loan_general.gif" alt="Diamond" class="img-fluid">
+			<div class="col-12 margin-top-s">
+              <h5 class="text-uppercase text-left green">With Blockchain</h5>
+				<img src="assets/gif/loan_blockchain.gif" alt="Scalable2" class="img-fluid">
             </div>
           </div>
-          <div class="row margin-bottom">
-            <div class="col-1"></div>
-            <div class="col-4"></div>
-            <div class="col-sm-7">
-              With Blockchain
-              <img src="assets/gif/loan_blockchain.gif" alt="Diamond2" class="img-fluid">
-            </div>
-          </div>
+		  </div>
         </div>
-      </div>
 
     </div>
   </div>
@@ -376,8 +347,8 @@
   <div class="container-fluid" id="Six">
     <div class="container margin-bottom">
       <div class="row margin-top">
-        <div class="col 10">
-          <h3>Blockchain generates a proof that digital
+        <div class="col 11">
+          <h3>All these perks rely on the core idea of blockchain. <br> Blockchain generates a proof that a certain
             <mark class="popup" id="popupInfo" onclick="popupFunction4()"> information
               <span class="popuptext" id="popupTextInfo">
                 <div class="row">
@@ -396,61 +367,29 @@
                 </div>
               </span>
             </mark>
-            recorded at a certain time. </h3>
+            was recorded at a certain time.</h3>
         </div>
-        <div class="col-2">
+        <div class="col-1">
         </div>
       </div>
     </div>
   </div>
 
   <!--Black section for introduction-->
-  <!--	<div class="container-fluid intro">
-		<div class="container">
-		<div class="row">
-			<div class="col-10"><h2 class="white text-left margin-top">Let's make it clear.
-			</h2>
-			</div>
-
-			<div class="col-2"></div>
-		</div>
-		</div>
-	</div>
-
-	<div class="container-fluid">
-		<div class="container">
-      <div class="row">
-		<div class="col-sm-12">
-			<div class="col-12">
-          <p>Want to buy a diamond? But also want <img src="assets/artist.svg" alt="Artist"> to know exactly where it came from? Have no fear, for blockchain is here. Blockchain can track and authenticate diamonds, gems, and other metals through the global supply chain. Before, ring owners relied on certificates to prove authencity or that a diamond is sourced from a conflict-free zone.</p>
-			  </div>
-        </div>
-      </div>
-	</div>
-	</div>-->
-
-  <!--Black section for introduction-->
   <div class="container-fluid intro">
     <div class="container">
       <div class="row">
-        <div class="col-10">
+        <div class="col-11">
           <h2 class="white text-left margin-top">How does it work?
           </h2>
         </div>
-        <div class="col-2"></div>
+        <div class="col-1"></div>
       </div>
     </div>
   </div>
 
   <div class="container margin-bottom">
     <div class="row margin-top">
-      <div class="col 8">
-        <h4>BASICS BABY</h4>
-      </div>
-      <div class="col-4">
-      </div>
-    </div>
-    <div class="row">
       <div class="col-12">
         <h3>So, let’s go to the basics of what is a blockchain.
         </h3>
@@ -458,32 +397,31 @@
     </div>
 
     <div class="row margin-top">
-      <div class="col-sm-5">
+      <div class="col-sm-6">
         <div class="row">
-          <div class="col-4 greenbg">
-            <h6 class="number center">1</h6>
+          <div class="col-2 blackbg">
+            <p class="number center">1</p>
           </div>
-          <div class="col-8 blockbg">
-            <h6>Recorded <br> Information</h6>
+          <div class="col-10 blockbg">
+            <h6 class="center-top">Recorded Information</h6>
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-2">
 
           </div>
-          <div class="col-sm-8">
-            <br>Almost all kind of digital informations! For example:
+          <div class="col-sm-10">
+            <p><br>This can be any kind of information, but the most common is a <b class="green">record of transaction</b>. For example, a record that<i> Alice gave Bob 10 dollars.</i> <br><br> But it also can be:
             <ul>
-              <li>a document,</li>
-              <li>a patent, </li>
-              <li>a transaction, </li>
-              <li>an action performed</li>
-              <li>a work of art</li>
-            </ul>
+              <li>An action performed <br><i>(Alice created an artwork)</i></li>
+              <li>A patent <br><i>(Alice invented a bicycle)</i></li>
+              <li>A document <br><i>(Alice explained how bicycle works)</i></li>
+              <li>and  more </li>
+			  </ul></p>
           </div>
         </div>
       </div>
-      <div class="col-sm-7">
+      <div class="col-sm-6">
         <div>
           <img src="assets/illus-digInfo.svg" alt="Digital Information" class="img-fluid align-center">
         </div>
@@ -491,25 +429,25 @@
     </div>
 
     <div class="row margin-top">
-      <div class="col-sm-5">
+      <div class="col-sm-6">
         <div class="row">
-          <div class="col-4 greenbg">
-            <h6 class="number center">2</h6>
+          <div class="col-2 blackbg">
+            <p class="number center">2</p>
           </div>
-          <div class="col-8 blockbg">
-            <h6>A <br> Block</h6>
+          <div class="col-10 blockbg">
+            <h6 class="center-top">Block</h6>
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-2">
 
           </div>
-          <div class="col-sm-8">
-            <br> <br> A bundle of recorded informations
+          <div class="col-sm-10">
+            <br>A <b class="green">block</b> is a bundle of recorded information  put together. *** [the number of records that form one block varies in different blockchains]
           </div>
         </div>
       </div>
-      <div class="col-sm-7">
+      <div class="col-sm-6">
         <div>
           <img src="assets/illus-block.svg" alt="Digital Information" class="img-fluid align-center">
         </div>
@@ -517,38 +455,37 @@
     </div>
 
     <div class="row margin-top">
-      <div class="col-sm-5">
+      <div class="col-sm-6">
         <div class="row">
-          <div class="col-4 greenbg">
-            <h6 class="number center">3</h6>
+          <div class="col-2 blackbg">
+            <p class="number center">3</p>
           </div>
-          <div class="col-8 blockbg">
-            <h6>A <br> Blockchain</h6>
+          <div class="col-10 blockbg">
+            <h6 class="center-top">Blockchain</h6>
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-2">
 
           </div>
-          <div class="col-sm-8">
-            <p><br>All the blocks linked together by their hashes*<br> <br>*A <b class="green">hash</b>
-              is a unequivocally unique code that allows blocks to match together.<br>Like the block hash of the first bitcoin block ever created:</p>
+          <div class="col-sm-10">
+            <p><br>Blockchain is a <b>chain of blocks</b> linked together with unique <b>64-characters codes</b> called <b class="green">hashes.</b></p><p> <b class="green">Hashes</b> are dependent on information stored on the block. They can’t be calculated and can only be found by random guessing. When a block is added to the blockchain, it has to have <b>the hash of the previous block</b> to connect with it and its own (new) hash to connect with the next block added. </p> <p>Like the block hash of the first bitcoin block ever created:</p>
             <p class="green"> 000000000019d6689c085ae165831e9<br>34ff763ae46a2a6c172b3f1b60a8ce26f</p>
           </div>
-          <div class="col-4">
+          <div class="col-2">
           </div>
-          <div class="col-sm-8 margin-top margin-bottom">
-            <p>What if someone hacks the recorded transaction?</p>
+          <div class="col-sm-10">
+            <p><br>What if someone hacks the recorded transaction?</p>
             <div id="hacker" onclick="hackFunction()" class="text-center">Try to hack it!</div>
             <div id="fix" onclick="fixFunction()" class="text-center">Fix it!</div>
             <p id="hackerText"> If the transaction changes, then the hash changes too. It would require re-adjusting all the hashes in the chain make them match again. And this would require too high a power usage.</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-7">
+      <div class="col-sm-6 margin-bottom">
         <div>
-          <img src="assets/illus-blockhain.svg" alt="Hash" class="img-fluid float-right" id="okHash">
-          <img src="assets/illus-blockhain-hacked.svg" alt="Hacked Hash" class="img-fluid float-right" id="hackedHash">
+          <img src="assets/illus-blockhain.svg" alt="Hash" class="img-fluid align-center" id="okHash">
+          <img src="assets/illus-blockhain-hacked.svg" alt="Hacked Hash" class="img-fluid align-center" id="hackedHash">
         </div>
       </div>
     </div>
@@ -559,7 +496,7 @@
     <div class="container">
       <div class="row">
         <div class="col-10">
-          <h2 class="white text-left margin-top">How are the hashes created?
+          <h2 class="white text-left margin-top">So the hashes are super important, but how exactly are they found?
           </h2>
         </div>
         <div class="col-2"></div>
@@ -569,9 +506,9 @@
 
   <div class="container margin-bottom">
     <div class="row margin-top">
-      <div class="col-8">
-        <h3>There are different ways that people compete to find the hash to get a
-          <mark class="popup" id="popupReward" onclick="popupFunction8()">reward
+      <div class="col-11">
+        <h3>There are different ways in which people compete to find the hash to get a
+          <mark class="popup" id="popupReward" onclick="popupFunction8()">reward.
             <span class="popuptext" id="popupTextReward">
               <div class="row">
                 <div class="col-sm-11">
@@ -585,8 +522,8 @@
                 </div>
               </div>
             </span>
-          </mark>
-          for finding it these ways are called: consensuses. Let’s take a closer look.
+          </mark> <br>
+          These ways of competing are called <b class="green">consensuses</b>, and people try to find hashes are called [full]<b class="green">nodes</b>. Depending on the consensus they can be called <b>miners</b>, <b>validators</b> and more.<br><br>Let’s take a closer look to the two most common ways.
         </h3>
       </div>
     </div>
@@ -599,20 +536,19 @@
           <h3 class="text-uppercase text-center">Proof-of-work</h3>
         </div>
         <div class="col-12">
-          <h4 class="text-uppercase text-center green">POW</h4>
+          <h5 class="text-center">PoW</h5>
         </div>
-        <div class="col-12 margin-top">
-          <p class="text-center">Cryptographic hash algorithm based problem solvers (Miners) compete to discover the hash of the next block.</p>
-        </div>
-        <div class="col-12 greenbd">
-          <p>The one with the <b class="green">higher computer power</b> is more likely to find the hash quicker and get the reward.</p>
-        </div>
-
-        <div class="col-12">
+        <div class="col-12 margin-top-s">
+          <p class="text-center">System makes finding the hash harder, so all miners  spend more time finding it. Rewards the first miner who finds the hash.</p>
+        </div>        
+        <div class="col-12 blackbg2">
+			  <p class="white text-center">The one with the <b>stronger computer power</b> is more likely to find the hash quicker and get the reward</p>
+		 </div>
+		  <div class="col-12 p-0 bdblack">
           <div><img src="assets/gif/POW.gif" alt="Proof of Work" class="img-fluid" width="100%"></div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12 margin-top bdblack">
+      <div class="col-md-6 col-sm-12 margin-top">
         <div class="col-12">
           <h4 class="text-uppercase text-center">Consensus 2</h4>
         </div>
@@ -620,18 +556,18 @@
           <h3 class="text-uppercase text-center">Proof-of-stake</h3>
         </div>
         <div class="col-12">
-          <h4 class="text-uppercase text-center green">POS</h4>
+          <h5 class="text-center">PoW</h5>
         </div>
-        <div class="col-12 margin-top">
-          <p class="text-center">System arbitrary selects a node as a <br> validator for the next block.</p>
-        </div>
-        <div class="col-12 greenbd">
-          <p>The one with the <b class="green">biggest stake</b> is more likely to be selected and get the reward. </p>
-        </div>
-
-        <div class="col-12">
+        <div class="col-12 margin-top-s">
+          <p class="text-center">System arbitrarily selects a node as a validator for the next block and rewards them. The more money a node “stakes”, the more likely he is to be selected.</p>
+        </div>        
+        <div class="col-12 blackbg2">
+			  <p class="white text-center">The one with the <b>biggest stake</b> is more likely to be selected and get the reward</p>
+		 </div>
+		  <div class="col-12 p-0 bdblack">
           <div><img src="assets/gif/POS.gif" alt="Proof of Stake" class="img-fluid" width="100%"></div>
         </div>
+      </div>
       </div>
       <div class="col-md-12 col-sm-12 margin-top margin-bottom">
         <div class="col-12">

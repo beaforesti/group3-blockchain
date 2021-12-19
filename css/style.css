@@ -100,8 +100,11 @@
 }
 
 #consensus {
-  border: solid;
-  border-color: #0d0d0d;
+	background-color: #ffffff;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: solid #0d0d0d;
+	box-shadow: 10px 10px #01F293;
 }
 
 #sketch-holder {
@@ -127,13 +130,12 @@ body {
   background-color: #ffffff;
   font-size: 18px;
   font-family: "Readex Pro", sans-serif;
-  cursor: url("../assets/cursor.png"), auto;
+  /*cursor: url("../assets/cursor.png"), auto;*/
 }
 
 /* h1, h2, h3, h4, h5 style */
 h1,
 .h1 {
-  /*font-family: 'Noto Sans Mono', monospace;*/
   font-family: "Readex Pro", sans-serif;
   text-align: center;
   color: #ffffff;
@@ -142,7 +144,6 @@ h1,
 
 h2,
 .h2 {
-  /*font-family: 'Noto Sans Mono', monospace;*/
   font-family: "Readex Pro", sans-serif;
   text-align: left;
   /*font-size: 4rem;*/
@@ -151,7 +152,6 @@ h2,
 
 h3,
 .h3 {
-  /*font-family: 'Noto Sans Mono', monospace;*/
   font-family: "Readex Pro", sans-serif;
   text-align: left;
   font-size: 2rem;
@@ -160,28 +160,24 @@ h3,
 
 h4,
 .h4 {
-  /*font-family: 'Noto Sans', sans serif;*/
   font-family: "Readex Pro", sans-serif;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #0d0d0d;
 }
 
 h5,
 .h5 {
-  /*font-family: 'Noto Sans Mono', monospace;*/
   font-family: "Readex Pro", sans-serif;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #0d0d0d;
-  background-color: #01f293;
 }
 
 h6,
 .h6 {
-  /*font-family: 'Noto Sans Mono', monospace;*/
   font-family: "Readex Pro", sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
   color: #0d0d0d;
   padding: 10px;
@@ -192,24 +188,24 @@ mark,
   padding: inherit;
   background-color: #ffffff;
   color: #0d0d0d;
-  border-bottom: 5px solid #01f293;
-  border-right: 5px solid #01f293;
-  border-top: 1px solid #01f293;
-  border-left: 1px solid #01f293;
+	border: solid #01f293;
+	box-shadow: 5px 5px #01F293;
 }
 
 mark:hover {
   background-color: #0d0d0d;
   color: #ffffff;
+border: solid #0d0d0d;
 }
 
 .number {
   color: #ffffff;
-  background-color: #01f293;
-  font-size: 3rem;
+  font-size: 2.5rem;
+	text-align: center;
   border: none;
   padding-left: 10px;
   padding-right: 10px;
+	
 }
 
 .greenbg {
@@ -218,46 +214,52 @@ mark:hover {
   padding-right: 10px;
 }
 
+.blackbg {
+  background-color: #0d0d0d;
+  padding-left: 10px;
+  padding-right: 10px;
+	box-shadow: 5px 5px #01F293;
+}
+
+.blackbg2 {
+  background-color: #0d0d0d;
+	padding: 10px 10px;
+}
+
 .greenbd{
 	background-color: #ffffff;
-	border: solid;
-	border-color: #01F293;
+	border: solid #01F293;
+	box-shadow: 5px 5px #01F293;
 	margin-bottom: 10px;
 	margin-top: 30px;
 }
 
 .bdblack{
-	border-left: 2px solid #0D0D0D;
+	border: 2px solid #0D0D0D;
 }
 
 .blockbg {
   background-color: #ffffff;
   padding-left: 10px;
   padding-right: 10px;
-  border: solid;
-  border-bottom: 5px solid #0d0d0d;
-  border-right: 5px solid #0d0d0d;
-  border-top: 1px solid #0d0d0d;
-  border-left: 1px solid #0d0d0d;
+	border: solid #0d0d0d;
+	box-shadow: 5px 5px #01F293;
 }
 
 .trilemma {
 	background-color: #ffffff;
 	padding-left: 10px;
 	padding-right: 10px;
-	border: solid;
-	border-bottom: 10px solid #01F293;
-	border-right: 10px solid #01F293;
-	border-top: 1px solid #01F293;
-	border-left: 1px solid #01F293;
+	border: solid #0d0d0d;
+	box-shadow: 10px 10px #01F293;
 }
-
 
 .trilemmaLogo {
   width: 50px;
   height: 50px;
   padding: 5px;
 }
+
 
 p,
 .p {
@@ -279,6 +281,10 @@ li,
 
 .white {
   color: #ffffff;
+}
+
+.black {
+  color: #0d0d0d;
 }
 
 .green {
@@ -329,26 +335,21 @@ li,
   font-family: "ReadexPro", sans-serif;;
   font-size: 1.5rem;
   border-radius: 0;
-  border-color: #aaaaaa;
-  border-width: 0px 5px 5px 0px;
   position: fixed;
   z-index: 2;
   right: 30px;
   bottom: 30px;
   padding: 3px 8px;
-  border-bottom: 5px solid #ffffff;
-  border-right: 5px solid #ffffff;
-  border-top: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
+	border: solid #ffffff;
+	box-shadow: 5px 5px #ffffff;
+	
 }
 
 #aboutBtn:hover {
   background-color: #ffffff;
   color: #0d0d0d;
-  border-bottom: 5px solid #0d0d0d;
-  border-right: 5px solid #0d0d0d;
-  border-top: 1px solid #0d0d0d;
-  border-left: 1px solid #0d0d0d;
+	border: solid #0d0d0d;
+	box-shadow: 5px 5px #0d0d0d;
 }
 
 #aboutBtn:active {
@@ -379,21 +380,23 @@ li,
 }
 
 #goBtn {
-  background-color: #0d0d0d;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #0d0d0d;
   font-family: "Noto Sans Mono", monospace;
   font-size: 1.5rem;
   border-radius: 0;
-  border-color: #ffffff;
-  border-width: 1px 5px 5px 1px;
+  border: solid #ffffff;
+	box-shadow: 5px 5px #01f293;
   z-index: 1;
   position: relative;
   padding: 20px 20px;
 }
 
 #goBtn:hover {
-  background-color: #ffffff;
-  color: #0d0d0d;
+  background-color: #0d0d0d;
+  color: #ffffff;
+	border: solid #ffffff;
+	box-shadow: 5px 5px #01f293;
 }
 
 #goBtn:active {
@@ -514,19 +517,15 @@ li,
 	padding: 5px;
   background-color: #A500FF;
 	color: #ffffff;
-	border-bottom: 5px solid #0D0D0D;
-	border-right: 5px solid #0D0D0D;
-	border-top: 1px solid #0D0D0D;
-	border-left: 1px solid #0D0D0D;
+	border: solid #A500FF;
+	box-shadow: 5px 5px #0d0d0d;
 }
 
 #hacker:hover{
 	background-color: #ffffff;
 	color: #0d0d0d;
-	border-bottom: 5px solid #A500FF;
-	border-right: 5px solid #A500FF;
-	border-top: 1px solid #A500FF;
-	border-left: 1px solid #A500FF;
+	border: solid #A500FF;
+	box-shadow: 5px 5px #0d0d0d;
 }
 
 #fix{
@@ -536,19 +535,15 @@ li,
 	margin-top: 5px;
   background-color: #01F293;
 	color: #ffffff;
-	border-bottom: 5px solid #0D0D0D;
-	border-right: 5px solid #0D0D0D;
-	border-top: 1px solid #0D0D0D;
-	border-left: 1px solid #0D0D0D;
+	border: solid #01F293;
+	box-shadow: 5px 5px #0d0d0d;
 }
 
 #fix:hover{
 	background-color: #ffffff;
 	color: #0d0d0d;
-	border-bottom: 5px solid #01F293;
-	border-right: 5px solid #01F293;
-	border-top: 1px solid #01F293;
-	border-left: 1px solid #01F293;
+	border: solid #01F293;
+	box-shadow: 5px 5px #0d0d0d;
 }
 
 
@@ -562,6 +557,18 @@ li,
 .imgApp:hover {
   opacity: 1;
   transform: scale(1.1) translate(0%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+	#theVideo{
+		margin-top: 300px;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	#theVideo{
+		margin-top: 0px;
+	}
 }
 
 #okHash{
