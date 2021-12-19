@@ -10,7 +10,7 @@ let arrowBack;
 let arrowForward;
 
 function preload() {
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 33; i++) {
     screenshots[i] = loadImage(
       "./assets/screenshots/Screenshot (" + i + ").png"
     );
@@ -46,7 +46,7 @@ function canvasClicked() {
     //   let randomf = random(windowWidth / 4, (windowWidth / 4) * 3);
     //   let randomfy = random(150);
     if (clicks >= screenshots.length) {
-      let f = screenshots[24];
+      let f = screenshots[32];
       let final = new Screenshot(randomx, randomy, f);
       scrimgs.push(final);
     } else {
@@ -70,7 +70,6 @@ function canvasClicked() {
     scrimgs[i].show();
   }
   console.log("scrimgs " + scrimgs.length);
-
 }
 
 function draw() {
