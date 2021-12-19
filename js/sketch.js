@@ -48,7 +48,7 @@ function canvasClicked() {
     //   let randomf = random(windowWidth / 4, (windowWidth / 4) * 3);
     //   let randomfy = random(150);
     if (clicks >= screenshots.length) {
-      let f = screenshots[31];
+      let f = screenshots[32];
       let final = new Screenshot(randomx, randomy, f);
       scrimgs.push(final);
     } else {

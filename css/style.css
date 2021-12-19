@@ -571,6 +571,12 @@ a, a:hover{
   transform: scale(1.1) translate(0%, -50%);
 }
 
+.gifFrame {
+	background-color: #ffffff;
+	border: solid #ffffff;
+	box-shadow: 5px 5px #ffffff;
+}
+
 @media screen and (max-width: 600px) {
 	#theVideo{
 		margin-top: 300px;
