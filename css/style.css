@@ -43,6 +43,10 @@
   margin-bottom: 120px;
 }
 
+.margin-bottom-big {
+  margin-bottom: 250px;
+}
+
 
 /* Sections containers*/
 
@@ -100,7 +104,7 @@
 }
 
 #Last {
-  height: 100vh;
+  height: inherit;
 }
 
 #consensus {
