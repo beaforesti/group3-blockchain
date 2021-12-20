@@ -81,7 +81,7 @@ function draw() {
   renderer.parent("sketch-holder");
   renderer.style("display", "block");
 
-  background("black");
+  background("#0d0d0d");
   push();
   translate(renderer.width / 2, renderer.height / 2.5);
   // fill("white");
