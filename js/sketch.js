@@ -118,8 +118,8 @@ class Screenshot {
       this.screenshot,
       this.x,
       this.y,
-      this.screenshot.width / 2,
-      this.screenshot.height / 2
+      this.screenshot.width / 1.5,
+      this.screenshot.height / 1.5
     );
   }
 }

@@ -49,6 +49,10 @@
 
 
 /* Sections containers*/
+.navbar{
+  background-color: #0d0d0d;
+  height: 60px;
+}
 
 #videoTitle {
   height: 0;
@@ -338,16 +342,16 @@ li,
 
 /* Buttons */
 
-#aboutBtn {
+/* #aboutBtn {
   background-color: #0d0d0d;
   color: #ffffff;
   font-family: "ReadexPro", sans-serif;;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 0;
   position: fixed;
   z-index: 2;
   right: 30px;
-  bottom: 30px;
+  top: 1px;
   padding: 3px 8px;
 	border: solid #ffffff;
 	box-shadow: 5px 5px #ffffff;
@@ -365,27 +369,45 @@ li,
   border: none;
   box-shadow: 0 5px #0d0d0d;
   transform: translateY(4px);
+} */
+
+#aboutBtn {
+  font-family: "ReadexPro", sans-serif;;
+  font-size: 1.5rem;
+  position: fixed;
+  right: 30px;
+  top: 15px;
+  padding: 3px 8px;
+}
+
+#aboutBtn:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  #homeBtn {
+    background-image: url("../assets/home-logo-sm.svg");
+  }
+  #homeBtn:hover {
+    background-image: url("../assets/home-logo-sm.svg");
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #homeBtn {
+    background-image: url("../assets/home-logo.svg");
+  }
+  #homeBtn:hover {
+    background-image: url("../assets/home-logo-hover.svg");
+  }
 }
 
 #homeBtn {
-  background-image: url("../assets/home-logo.svg");
-  /* background-color: #ffffff;
-	color: #0D0D0D;
-	font-family: 'Noto Sans Mono', monospace;
-	font-size: 1.5rem;
-	border-radius: 0;
-	border-color: #aaaaaa;
-	border-width: 0px 5px 5px 0px; */
-  width: 148px;
-  height: 87px;
+  width: 350px;
+  height: 59px;
   position: fixed;
-  z-index: 2;
-  left: 30px;
-  top: 30px;
-}
-
-#homeBtn:hover {
-  background-image: url("../assets/home-logo-hover.svg");
+  left: 20px;
+  top: 1px;
 }
 
 #goBtn {
@@ -415,7 +437,12 @@ li,
 }
 
 a, a:hover{
-  color: #4BE6FD;
+  color: #D280FF;
+}
+
+
+.link2, .link2:hover{
+  color: #A500FF;
 }
 
 /* Popup */
@@ -544,7 +571,7 @@ a, a:hover{
 	padding: 5px;
 	margin-top: 5px;
   background-color: #01F293;
-	color: #ffffff;
+	color: #0D0D0D;
 	border: solid #01F293;
 	box-shadow: 5px 5px #0d0d0d;
 }
@@ -560,7 +587,7 @@ a, a:hover{
 	cursor: pointer;
 	padding: 5px;
   background-color: #01F293;
-	color: #ffffff;
+	color: #0D0D0D;
 	border: solid #01F293;
 	box-shadow: 5px 5px #ffffff;
 }
@@ -615,14 +642,14 @@ a, a:hover{
 	margin-top: 10px;
 }
 
-g#year-timeline > g {
-  cursor: pointer; /* The hand cursor will show over group */
+/*g#year-timeline > g {
+  cursor: pointer;
 }
 
 #year-timeline g {
   transition: 0.3s ease opacity;
   cursor: pointer;
-}
+}*/
 
 g#key > g {
   cursor: pointer; /* The hand cursor will show over group */

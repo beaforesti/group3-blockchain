@@ -49,13 +49,13 @@ d3.html("assets/timeline.svg").then(function(newDocument3) {
 
   //Select all the groups inside the nodes groups
   //On each group do something when i click it
-  const clusters = d3.selectAll("#year-timeline > g");
-  clusters.on("click", function() {
-    clusters.style("opacity" , 0.2);
-    d3.select(this).style("opacity", 1);
-  });
-
-  console.log(clusters);
+  // const clusters = d3.selectAll("#year-timeline > g");
+  // clusters.on("click", function() {
+  //   clusters.style("opacity" , 0.2);
+  //   d3.select(this).style("opacity", 1);
+  // });
+  //
+  // console.log(clusters);
 
 });
 
