@@ -80,7 +80,8 @@
 
 #Two {
   height: 100vh;
-  background-image: url("../assets/bg-one.png");
+  /* background-image: url("../assets/bg-one.png"); */
+  background-color: #0D0D0D;
   position: relative;
   text-align: center;
 }
@@ -405,7 +406,7 @@ li,
 #homeBtn {
   width: 350px;
   height: 59px;
-  position: fixed;
+
   left: 20px;
   top: 1px;
 }
