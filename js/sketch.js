@@ -11,7 +11,7 @@ let arrowForward;
 let genesisScr = [];
 
 function preload() {
-  for (let i = 0; i < 32; i++) {
+  for (let i = 0; i < 29; i++) {
     screenshots[i] = loadImage(
       "./assets/screenshots/Screenshot (" + i + ").png"
     );
@@ -61,7 +61,7 @@ function canvasClicked() {
       scrimgs[i].show();
     }
     console.log("scrimgs " + scrimgs.length);
-  } else {
+  } else if (clicks >= 0) {
     clicks--;
     let i = scrimgs.length - 1;
     scrimgs.splice(i, 1);

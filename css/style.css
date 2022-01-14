@@ -51,7 +51,7 @@
 /* Sections containers*/
 .navbar{
   background-color: #0d0d0d;
-  height: 60px;
+  height: 62px;
 }
 
 #videoTitle {
@@ -405,7 +405,7 @@ li,
 
 #homeBtn {
   width: 350px;
-  height: 59px;
+  height: 50px;
 
   left: 20px;
   top: 1px;
@@ -438,12 +438,16 @@ li,
 }
 
 a, a:hover{
-  color: #D280FF;
+  /* color: #D280FF; */
+  color: inherit;
+  text-decoration: underline;
 }
 
 
 .link2, .link2:hover{
-  color: #A500FF;
+  /* color: #A500FF; */
+
+  text-decoration: underline;
 }
 
 /* Popup */
@@ -462,7 +466,8 @@ a, a:hover{
   .popuptext {
     width: 30vw;
     position: absolute;
-    bottom: 125%;
+    /* bottom: 125%; */
+    top: 125%;
     left: 10%;
     margin-left: -200px;
   }
