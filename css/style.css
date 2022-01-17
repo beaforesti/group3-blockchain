@@ -618,9 +618,8 @@ a, a:hover{
 }
 
 .gifFrame {
-	background-color: #ffffff;
-	border: solid #ffffff;
-	box-shadow: 5px 5px #ffffff;
+	/* border: 10px solid transparent;
+  border-image: url("../assets/about/frame_screen.png") 10 stretch; */
 }
 
 @media screen and (max-width: 600px) {
